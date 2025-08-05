@@ -7,8 +7,7 @@ import {
     DialogFooter,
     DialogClose,
   } from "@/components/ui/dialog";
-  import { Button } from "@/components/ui/button";
-  
+import { Button } from "@/components/ui/button"; 
   interface ConfirmDeleteDialogProps {
     trigger: React.ReactNode;
     itemName?: string;
@@ -37,7 +36,7 @@ import {
               <Button variant="outline">Bekor qilish</Button>
             </DialogClose>
             <DialogClose asChild>
-              <Button variant="destructive" onClick={onConfirm}>
+              <Button variant="destructive"  disabled onClick={onConfirm}>
                 Ha, o‘chirish
               </Button>
             </DialogClose>
