@@ -1,0 +1,13 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font: bold 16px sans-serif; fill: #222; }
+    .subtext { font: 12px sans-serif; fill: #555; }
+  </style>
+  <g>
+    <circle cx="30" cy="30" r="28" stroke="#333" strokeWidth="2" fill="none"/>
+    <path d="M20 30 q10 -15 20 0 q-10 15 -20 0" stroke="#333" strokeWidth="2" fill="none"/>
+    <path d="M22 28 q8 -10 16 0" stroke="#555" strokeWidth="1.5" fill="none"/>
+  </g>
+  <text x="70" y="28" class="text">Help Me Help You</text>
+  <text x="70" y="46" class="subtext">Your support hub</text>
+</svg>
