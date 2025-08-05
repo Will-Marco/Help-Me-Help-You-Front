@@ -8,4 +8,4 @@ function App() {
   return cookies.token ? <DashboardRoutes /> : <AuthRoute />
 }
 
-export default App
+export default App;
