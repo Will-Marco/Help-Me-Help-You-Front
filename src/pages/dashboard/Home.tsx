@@ -1,6 +1,8 @@
+import PageLoading from "@/components/PageLoading"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <PageLoading/>
   )
 }
 
