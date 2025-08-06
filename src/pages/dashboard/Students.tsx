@@ -1,7 +1,8 @@
+import PageLoading from "@/components/PageLoading"
 
 const Students = () => {
   return (
-    <div>Students</div>
+    <PageLoading/>
   )
 }
 
