@@ -1,21 +1,18 @@
-import { Loader2Icon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// components/ButtonLoading.tsx
+import { Button } from "@/components/ui/button"
+import { Loader2 } from "lucide-react"
 
-interface ButtonLoadingProps {
-  text?: string;
-  size?: "sm"  | "lg" | "default" | "icon";
-  className?: string;
+type Props = {
+  text: string
+  loading?: boolean
+  disabled?: boolean
 }
 
-export function ButtonLoading({
-  text = "Iltimos, kuting...",
-  size = "sm",
-  className,
-}: ButtonLoadingProps) {
+export function ButtonLoading({ text, loading = false, disabled = false }: Props) {
   return (
-    <Button disabled size={size} className={className}>
-      <Loader2Icon className="animate-spin mr-2 h-4 w-4" />
+    <Button type="submit" disabled={disabled || loading}>
+      {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
       {text}
     </Button>
-  );
+  )
 }

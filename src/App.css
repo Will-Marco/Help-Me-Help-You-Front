@@ -9,35 +9,14 @@
 .logo {
   width: 100%;
   max-width: 800px;
+  transform: scale(0);
   opacity: 0;
+  animation: scaleInCenter 1.8s ease-out forwards;
 }
 
-/* Desktop: Chapdan markazga */
-@media (min-width: 768px) {
-  .logo {
-    animation: slideInFromLeft 2s ease-out forwards;
-    transform: translateX(-100%);
-  }
-
-  @keyframes slideInFromLeft {
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-}
-
-/* Mobil: Tepadan markazga */
-@media (max-width: 767px) {
-  .logo {
-    animation: slideInFromTop 2s ease-out forwards;
-    transform: translateY(-100%);
-  }
-
-  @keyframes slideInFromTop {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes scaleInCenter {
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
