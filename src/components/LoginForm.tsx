@@ -1,46 +1,51 @@
+import { useContext } from "react"
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { FcGoogle } from "react-icons/fc"
 import { toast } from "sonner"
+import { Context } from "@/context/Context"
+import { useNavigate } from "react-router-dom"
 
 const Loginform = () => {
+  const { setToken } = useContext(Context)
+  const navigate = useNavigate()
+
   const handleGoogleLogin = () => {
     toast.info("Google orqali tizimga kirish bosildi!")
-    // yoki toast.success(), toast.error(), toast.warning()
   }
 
   const handleLoginClick = (e: React.FormEvent) => {
     e.preventDefault()
-    toast.message("Tizimga muvaffaqiyatli kirildi!")
-    // yoki xatolik bo‘lsa: toast.error("Email yoki parol noto‘g‘ri!")
+    setToken("1234") 
+    toast.success("Tizimga muvaffaqiyatli kirildi!")
+    navigate("/teachers")
   }
-
   return (
     <form className="bg-white rounded-xl shadow-lg px-6 py-8 w-full max-w-md space-y-6 mx-auto">
       <h2 className="text-2xl font-bold text-center text-black">Tizimga kirish</h2>
-      
+
       <div className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-500 mb-2">Email</label>
-          <Input 
-            className="rounded-lg border-gray-200 focus:ring-2 focus:ring-[#3ce6cf] transition-all" 
-            placeholder="Emailingizni kiriting..." 
-            type="email" 
+          <Input
+            className="rounded-lg border-gray-200 focus:ring-2 focus:ring-[#3ce6cf] transition-all"
+            placeholder="Emailingizni kiriting..."
+            type="email"
           />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-500 mb-2">Parol</label>
-          <Input 
-            className="rounded-lg border-gray-200 focus:ring-2 focus:ring-[#3ce6cf] transition-all" 
-            placeholder="Parolingizni kiriting..." 
-            type="password" 
+          <Input
+            className="rounded-lg border-gray-200 focus:ring-2 focus:ring-[#3ce6cf] transition-all"
+            placeholder="Parolingizni kiriting..."
+            type="password"
           />
         </div>
       </div>
 
-      <Button 
-        className="w-full text-white font-semibold transition-colors duration-300 cursor-pointer" 
-        variant="default" 
+      <Button
+        className="w-full text-white font-semibold transition-colors duration-300 cursor-pointer"
+        variant="default"
         type="submit"
         onClick={handleLoginClick}
       >

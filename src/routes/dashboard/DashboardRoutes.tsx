@@ -1,15 +1,12 @@
-import { Route, Routes } from "react-router-dom"
-import DashboardLayout from "../../provider/DashboardLayout"
-import Home from "@/pages/auth/Home"
-import { Path } from "@/hooks/Path"
+import { Route, Routes } from 'react-router-dom'
+import type { DashboardRouteType } from '@/@types/DashboardRouteType'
+import { DashboardRouteList } from '@/hooks/Path'
 
 const DashboardRoutes = () => {
   return (
-    <DashboardLayout>
-      <Routes>
-        <Route path={Path.main} element={<Home />} />
-      </Routes>
-    </DashboardLayout>
+    <Routes>
+        {DashboardRouteList.map((item:DashboardRouteType) => <Route key={item.id} path={item.path} element={item.element}/>)}
+    </Routes>
   )
 }
 

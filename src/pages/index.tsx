@@ -1,6 +1,6 @@
 import { lazy } from "react"
 import LoginHome from "./auth/Home"
-import Home from "./dashboard/Home"
+import Home from "./Dashboard/Home"
 
 const LoginTeacher = lazy(() =>
   new Promise((resolve: any) => {
