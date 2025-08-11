@@ -7,10 +7,16 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${showNavbar ? "w-[87px]" : "w-[18%]"} duration-300 h-[100vh] overflow-hidden bg-[#18181b]`}
+      className={`${
+        showNavbar ? "w-[87px]" : "w-[18%]"
+      } duration-300 h-[100vh] overflow-hidden bg-gray-800 border-r border-gray-700`}
     >
-      <div className={`flex justify-center ${showNavbar ? "opacity-0 w-0" : ""} border-b-[1px] border-b-white`}>
-        <div className="inline-flex items-center justify-center my-3 ">
+      <div
+        className={`flex justify-center ${
+          showNavbar ? "opacity-0 w-0" : ""
+        } border-b border-gray-700`}
+      >
+        <div className="inline-flex items-center justify-center mb-4 ">
           <span className="text-4xl font-bold">
             <span className="text-white"><i>HM</i></span>
             <span className="text-teal-500"><i>H</i></span>
