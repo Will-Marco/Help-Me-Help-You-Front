@@ -18,7 +18,7 @@ const NavbarCarusel = () => {
       >
         {/* Toggle button removed from here */}
   
-        <nav className="flex flex-col gap-2 flex-grow">
+        <nav className="flex flex-col gap-2 flex-grow duration-300">
           {DashboardNavList.map((item) => {
             const Icon = item.icon;
             return (
