@@ -1,4 +1,3 @@
-// src/routes/dashboardRoutes.js
 
 import { 
   Home, 
@@ -24,7 +23,6 @@ import {
   Star 
 } from 'lucide-react';
 
-// 📌 Barcha Path'lar
 export const Path = {
     main: '/',
     home: '/home',
@@ -41,7 +39,6 @@ export const Path = {
     settings: '/admin/settings'
 };
 
-// 📌 Route ro‘yxati (Router uchun)
 export const DashboardRouteList = [
     { id: 1, path: Path.admin, element: <Home/> },
     { id: 2, path: Path.teachers, element: <Teachers/> },
@@ -54,7 +51,6 @@ export const DashboardRouteList = [
     { id: 9, path: Path.settings, element: <Settings/> },
 ];
 
-// 📌 Navbar menyu ro‘yxati
 export const DashboardNavList = [
     { id: 1, label: "Home", path: Path.admin, icon: HomeIcon },
     { id: 2, label: "Teachers", path: Path.teachers, icon: Users },

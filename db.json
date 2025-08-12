@@ -53,7 +53,7 @@
       ],
       "isActive": true,
       "createdAt": "2025-08-01T10:00:00.000Z",
-      "updatedAt": "2025-08-12T06:52:10.286Z"
+      "updatedAt": "2025-08-12T10:14:59.935Z"
     },
     {
       "id": "t2",
@@ -357,7 +357,7 @@
       "updatedAt": "2025-08-05T19:00:00.000Z"
     },
     {
-      "id": "s4",
+      "id": "s45",
       "tg_id": "tg-1005",
       "lastname": "Abdullayev",
       "firstname": "Bekzod",
