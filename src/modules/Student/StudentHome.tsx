@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react"; // lucide-react yulduzcha
 
 interface Teacher {
@@ -38,7 +36,7 @@ const RatingStars = ({ rating }: { rating: number }) => (
 );
 
 const StudentHomeModule = () => {
-  const [teachers, setTeachers] = useState<Teacher[]>([]);
+  const [_teachers, setTeachers] = useState<Teacher[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/teachers")
@@ -51,4 +49,3 @@ const StudentHomeModule = () => {
 };
 
 export default StudentHomeModule;
-  
