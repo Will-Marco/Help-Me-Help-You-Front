@@ -493,7 +493,7 @@
     },
     {
       "id": "l6",
-      "teacherId": null,
+      "teacherId": "t1",
       "startTime": "2025-08-16T14:00:00.000Z",
       "endTime": "2025-08-16T15:00:00.000Z",
       "status": "available",
@@ -507,7 +507,7 @@
     },
     {
       "id": "l7",
-      "teacherId": null,
+      "teacherId": "t1",
       "startTime": "2025-08-17T10:00:00.000Z",
       "endTime": "2025-08-17T11:00:00.000Z",
       "status": "booked",

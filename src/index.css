@@ -122,3 +122,21 @@
 body{
   background-color: #e0e0e0;
 }
+
+/* Chiroyli scroll */
+.scrollbar::-webkit-scrollbar {
+  height: 0; /* faqat gorizontal scroll */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* gray-400 */
+  border-radius: 9999px; /* pill shape */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* gray-500 */
+}
