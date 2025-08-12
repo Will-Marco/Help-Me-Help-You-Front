@@ -61,11 +61,11 @@ export const StudentCard = ({ student, onMore, onEdit, onDelete }: StudentCardPr
               {student.tg_username && (
                 <div
                   onClick={() => copyToClipboard(`@${student.tg_username}`)}
-                  className="flex items-center space-x-1 text-blue-600 text-[15px] ml-6 cursor-pointer select-text"
+                  className="flex items-center space-x-1 text-black/70 text-[15px] ml-6 cursor-pointer select-text"
                   title="Click to copy Telegram username"
                 >
                   <Send color="gray" className="w-4 h-4" />
-                  <span><b>@{student.tg_username}</b></span>
+                  <span><b><i>@{student.tg_username}</i></b></span>
                 </div>
               )}
             </div>
