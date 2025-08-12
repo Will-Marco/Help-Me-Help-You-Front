@@ -58,7 +58,10 @@ const Home = () => {
     { month: "Feb", lessons: 800 },
     { month: "Mar", lessons: 2000 },
     { month: "Apr", lessons: 3000 },
-    { month: "May", lessons: 450 }
+    { month: "May", lessons: 450 },
+    {month: "Jun", lessons: 1200 },
+    { month: "Jul", lessons: 1500 },
+    { month: "Aug", lessons: 1800 },
   ];
 
   const COLORS = ["#FACC15", "#14B8A6", "#EF4444"];

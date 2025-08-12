@@ -1,39 +1,585 @@
 {
-    "admins": [
-      { "id": "a1", "username": "superadmin", "role": "SUPERADMIN", "phone": "+998900001111", "password": "123456", "createdAt": "2025-08-01T08:00:00.000Z", "updatedAt": "2025-08-01T08:00:00.000Z" },
-      { "id": "a2", "username": "admin1", "role": "ADMIN", "phone": "+998900002222", "password": "adminpass", "createdAt": "2025-08-02T09:00:00.000Z", "updatedAt": "2025-08-02T09:00:00.000Z" },
-      { "id": "a3", "username": "teacher_admin", "role": "ADMIN", "phone": "+998900002333", "password": "pass123", "createdAt": "2025-08-03T10:00:00.000Z", "updatedAt": "2025-08-03T10:00:00.000Z" }
-    ],
-  
-    "teachers": [
-      { "id": "t1", "name": "John Smith", "googleId": "g-123", "email": "john@example.com", "password": null, "googleRefreshToken": null, "googleAccessToken": null, "image": "https://randomuser.me/api/portraits/men/1.jpg", "hourPrice": 20, "role": "TEACHER", "phone": "+998900003333", "level": "C1", "rating": 4, "experience": "5 Years", "bio": "Experienced English teacher.", "portfolioVideoLink": null, "lessons": ["l1","l3","l5"], "isActive": true, "createdAt": "2025-08-01T10:00:00.000Z", "updatedAt": "2025-08-05T10:00:00.000Z" },
-      { "id": "t2", "name": "Sara Lee", "googleId": "g-456", "email": "sara@example.com", "password": null, "googleRefreshToken": null, "googleAccessToken": null, "image": "https://randomuser.me/api/portraits/women/2.jpg", "hourPrice": 15, "role": "TEACHER", "phone": "+998900004444", "level": "B2", "rating": 5, "experience": "3 Years", "bio": "Passionate about helping students succeed.", "portfolioVideoLink": null, "lessons": ["l2","l4"], "isActive": true, "createdAt": "2025-08-02T11:00:00.000Z", "updatedAt": "2025-08-04T12:00:00.000Z" },
-      { "id": "t3", "name": "Michael Brown", "googleId": "g-789", "email": "michael@example.com", "password": null, "googleRefreshToken": null, "googleAccessToken": null, "image": "https://randomuser.me/api/portraits/men/3.jpg", "hourPrice": 18, "role": "TEACHER", "phone": "+998900007777", "level": "C2", "rating": 3, "experience": "7 Years", "bio": "Specialist in IELTS preparation.", "portfolioVideoLink": null, "lessons": ["l6","l7"], "isActive": false, "createdAt": "2025-08-03T11:00:00.000Z", "updatedAt": "2025-08-03T12:00:00.000Z" }
-    ],
-  
-    "students": [
-      { "id": "s1", "tg_id": "tg-1001", "lastname": "Karimov", "firstname": "Ali", "tg_username": "ali_k", "age": 20, "phone": "+998900005555", "lessons": ["l1","l2"], "email": "ali@example.com", "createdAt": "2025-08-01T14:00:00.000Z", "updatedAt": "2025-08-03T14:00:00.000Z" },
-      { "id": "s2", "tg_id": "tg-1002", "lastname": "Islomova", "firstname": "Laylo", "tg_username": "laylo_i", "age": 18, "phone": "+998900006666", "lessons": ["l3"], "email": "laylo@example.com", "createdAt": "2025-08-02T15:00:00.000Z", "updatedAt": "2025-08-05T16:00:00.000Z" },
-      { "id": "s3", "tg_id": "tg-1003", "lastname": "Xasanov", "firstname": "Bek", "tg_username": "bek_x", "age": 22, "phone": "+998900008888", "lessons": ["l4","l5"], "email": "bek@example.com", "createdAt": "2025-08-03T17:00:00.000Z", "updatedAt": "2025-08-04T18:00:00.000Z" },
-      { "id": "s4", "tg_id": "tg-1004", "lastname": "Tursunova", "firstname": "Zuhra", "tg_username": "zuhra_t", "age": 19, "phone": "+998900009999", "lessons": ["l6"], "email": "zuhra@example.com", "createdAt": "2025-08-04T19:00:00.000Z", "updatedAt": "2025-08-05T19:00:00.000Z" }
-    ],
-  
-    "lessons": [
-      { "id": "l1", "teacherId": "t1", "startTime": "2025-08-10T08:00:00.000Z", "endTime": "2025-08-10T09:00:00.000Z", "status": "booked", "googleEventId": "evt-101", "studentId": "s1", "meetingUrl": "https://zoom.us/j/123456", "price": 20, "isPaid": true, "createdAt": "2025-08-01T08:00:00.000Z", "updatedAt": "2025-08-01T08:00:00.000Z" },
-      { "id": "l2", "teacherId": "t2", "startTime": "2025-08-11T10:00:00.000Z", "endTime": "2025-08-11T11:00:00.000Z", "status": "booked", "googleEventId": "evt-102", "studentId": "s1", "meetingUrl": "https://zoom.us/j/7891011", "price": 15, "isPaid": false, "createdAt": "2025-08-02T08:00:00.000Z", "updatedAt": "2025-08-02T08:00:00.000Z" },
-      { "id": "l3", "teacherId": "t1", "startTime": "2025-08-12T12:00:00.000Z", "endTime": "2025-08-12T13:00:00.000Z", "status": "available", "googleEventId": "evt-103", "studentId": null, "meetingUrl": null, "price": 25, "isPaid": false, "createdAt": "2025-08-03T08:00:00.000Z", "updatedAt": "2025-08-03T08:00:00.000Z" },
-      { "id": "l4", "teacherId": "t2", "startTime": "2025-08-14T09:00:00.000Z", "endTime": "2025-08-14T10:00:00.000Z", "status": "booked", "googleEventId": "evt-104", "studentId": "s3", "meetingUrl": "https://zoom.us/j/444555", "price": 18, "isPaid": true, "createdAt": "2025-08-04T08:00:00.000Z", "updatedAt": "2025-08-04T08:00:00.000Z" },
-      { "id": "l5", "teacherId": "t1", "startTime": "2025-08-15T15:00:00.000Z", "endTime": "2025-08-15T16:00:00.000Z", "status": "booked", "googleEventId": "evt-105", "studentId": "s3", "meetingUrl": "https://zoom.us/j/555666", "price": 22, "isPaid": false, "createdAt": "2025-08-05T08:00:00.000Z", "updatedAt": "2025-08-05T08:00:00.000Z" },
-      { "id": "l6", "teacherId": "t3", "startTime": "2025-08-16T14:00:00.000Z", "endTime": "2025-08-16T15:00:00.000Z", "status": "available", "googleEventId": "evt-106", "studentId": null, "meetingUrl": null, "price": 19, "isPaid": false, "createdAt": "2025-08-06T08:00:00.000Z", "updatedAt": "2025-08-06T08:00:00.000Z" },
-      { "id": "l7", "teacherId": "t3", "startTime": "2025-08-17T10:00:00.000Z", "endTime": "2025-08-17T11:00:00.000Z", "status": "booked", "googleEventId": "evt-107", "studentId": "s4", "meetingUrl": "https://zoom.us/j/777888", "price": 17, "isPaid": true, "createdAt": "2025-08-07T08:00:00.000Z", "updatedAt": "2025-08-07T08:00:00.000Z" }
-    ],
-  
-    "lessonHistory": [
-      { "id": "h1", "studentId": "s1", "teacherId": "t1", "lessonId": "l1", "startedAt": "2025-08-10T08:00:00.000Z", "finishedAt": "2025-08-10T09:00:00.000Z", "star": 5, "feedback": "Great lesson!", "createdAt": "2025-08-10T09:10:00.000Z", "updatedAt": "2025-08-10T09:10:00.000Z" },
-      { "id": "h2", "studentId": "s1", "teacherId": "t2", "lessonId": "l2", "startedAt": "2025-08-11T10:00:00.000Z", "finishedAt": "2025-08-11T11:00:00.000Z", "star": 4, "feedback": "Very helpful teacher.", "createdAt": "2025-08-11T11:05:00.000Z", "updatedAt": "2025-08-11T11:05:00.000Z" },
-      { "id": "h3", "studentId": "s3", "teacherId": "t2", "lessonId": "l4", "startedAt": "2025-08-14T09:00:00.000Z", "finishedAt": "2025-08-14T10:00:00.000Z", "star": 5, "feedback": "Loved the class!", "createdAt": "2025-08-14T10:05:00.000Z", "updatedAt": "2025-08-14T10:05:00.000Z" },
-      { "id": "h4", "studentId": "s3", "teacherId": "t1", "lessonId": "l5", "startedAt": "2025-08-15T15:00:00.000Z", "finishedAt": "2025-08-15T16:00:00.000Z", "star": 3, "feedback": "Good, but could improve.", "createdAt": "2025-08-15T16:05:00.000Z", "updatedAt": "2025-08-15T16:05:00.000Z" },
-      { "id": "h5", "studentId": "s4", "teacherId": "t3", "lessonId": "l7", "startedAt": "2025-08-17T10:00:00.000Z", "finishedAt": "2025-08-17T11:00:00.000Z", "star": 4, "feedback": "Nice teacher, clear explanations.", "createdAt": "2025-08-17T11:05:00.000Z", "updatedAt": "2025-08-17T11:05:00.000Z" }
-    ]
-  }
-  
+  "admins": [
+    {
+      "id": "a1",
+      "username": "superadmin",
+      "role": "SUPERADMIN",
+      "phone": "+998900001111",
+      "password": "123456",
+      "createdAt": "2025-08-01T08:00:00.000Z",
+      "updatedAt": "2025-08-01T08:00:00.000Z"
+    },
+    {
+      "id": "a2",
+      "username": "admin1",
+      "role": "ADMIN",
+      "phone": "+998900002222",
+      "password": "adminpass",
+      "createdAt": "2025-08-02T09:00:00.000Z",
+      "updatedAt": "2025-08-02T09:00:00.000Z"
+    },
+    {
+      "id": "a3",
+      "username": "teacher_admin",
+      "role": "ADMIN",
+      "phone": "+998900002333",
+      "password": "pass123",
+      "createdAt": "2025-08-03T10:00:00.000Z",
+      "updatedAt": "2025-08-03T10:00:00.000Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t1",
+      "name": "John Smith",
+      "googleId": "g-123",
+      "email": "john@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "hourPrice": 20,
+      "role": "TEACHER",
+      "phone": "+998900003333",
+      "level": "C1",
+      "rating": 2.5,
+      "experience": "5 Years",
+      "bio": "Experienced English teacher.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l1",
+        "l3",
+        "l5"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-01T10:00:00.000Z",
+      "updatedAt": "2025-08-12T06:52:10.286Z"
+    },
+    {
+      "id": "t2",
+      "name": "Sara Lee",
+      "googleId": "g-456",
+      "email": "sara@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "hourPrice": 15,
+      "role": "TEACHER",
+      "phone": "+998900004445",
+      "level": "B2",
+      "rating": 5,
+      "experience": "3 Years",
+      "bio": "Passionate about helping students succeed",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l2",
+        "l4"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-02T11:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:32.529Z"
+    },
+    {
+      "id": "t3",
+      "name": "Michael Brown",
+      "googleId": "g-789",
+      "email": "michael@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "hourPrice": 18,
+      "role": "TEACHER",
+      "phone": "+998900007777",
+      "level": "C2",
+      "rating": 5,
+      "experience": "7 Years",
+      "bio": "Dedicated English tutor with a passion for language learning.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l8",
+        "l9"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-06T09:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:38.597Z"
+    },
+    {
+      "id": "t11",
+      "name": "John Smith",
+      "googleId": "g-123",
+      "email": "john@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "hourPrice": 20,
+      "role": "TEACHER",
+      "phone": "+998900003333",
+      "level": "C1",
+      "rating": 2.5,
+      "experience": "5 Years",
+      "bio": "Experienced English teacher.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l1",
+        "l3",
+        "l5"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-01T10:00:00.000Z",
+      "updatedAt": "2025-08-12T05:38:51.690Z"
+    },
+    {
+      "id": "t22",
+      "name": "Sara Lee",
+      "googleId": "g-456",
+      "email": "sara@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "hourPrice": 15,
+      "role": "TEACHER",
+      "phone": "+998900004445",
+      "level": "B2",
+      "rating": 5,
+      "experience": "3 Years",
+      "bio": "Passionate about helping students succeed",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l2",
+        "l4"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-02T11:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:32.529Z"
+    },
+    {
+      "id": "t33",
+      "name": "Michael Brown",
+      "googleId": "g-789",
+      "email": "michael@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "hourPrice": 18,
+      "role": "TEACHER",
+      "phone": "+998900007777",
+      "level": "C2",
+      "rating": 5,
+      "experience": "7 Years",
+      "bio": "Dedicated English tutor with a passion for language learning.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l8",
+        "l9"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-06T09:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:38.597Z"
+    },
+    {
+      "id": "t5",
+      "name": "John Smith",
+      "googleId": "g-123",
+      "email": "john@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "hourPrice": 20,
+      "role": "TEACHER",
+      "phone": "+998900003333",
+      "level": "C1",
+      "rating": 2.5,
+      "experience": "5 Years",
+      "bio": "Experienced English teacher.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l1",
+        "l3",
+        "l5"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-01T10:00:00.000Z",
+      "updatedAt": "2025-08-12T05:38:51.690Z"
+    },
+    {
+      "id": "t6",
+      "name": "Sara Lee",
+      "googleId": "g-456",
+      "email": "sara@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "hourPrice": 15,
+      "role": "TEACHER",
+      "phone": "+998900004445",
+      "level": "B2",
+      "rating": 5,
+      "experience": "3 Years",
+      "bio": "Passionate about helping students succeed",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l2",
+        "l4"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-02T11:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:32.529Z"
+    },
+    {
+      "id": "t7",
+      "name": "Michael Brown",
+      "googleId": "g-789",
+      "email": "michael@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "hourPrice": 18,
+      "role": "TEACHER",
+      "phone": "+998900007777",
+      "level": "C2",
+      "rating": 5,
+      "experience": "7 Years",
+      "bio": "Dedicated English tutor with a passion for language learning.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l8",
+        "l9"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-06T09:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:38.597Z"
+    },
+    {
+      "id": "t8",
+      "name": "John Smith",
+      "googleId": "g-123",
+      "email": "john@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "hourPrice": 20,
+      "role": "TEACHER",
+      "phone": "+998900003333",
+      "level": "C1",
+      "rating": 2.5,
+      "experience": "5 Years",
+      "bio": "Experienced English teacher.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l1",
+        "l3",
+        "l5"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-01T10:00:00.000Z",
+      "updatedAt": "2025-08-12T05:38:51.690Z"
+    },
+    {
+      "id": "t9",
+      "name": "Sara Lee",
+      "googleId": "g-456",
+      "email": "sara@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "hourPrice": 15,
+      "role": "TEACHER",
+      "phone": "+998900004445",
+      "level": "B2",
+      "rating": 5,
+      "experience": "3 Years",
+      "bio": "Passionate about helping students succeed",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l2",
+        "l4"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-02T11:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:32.529Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "tg_id": "tg-1001",
+      "lastname": "Karimov",
+      "firstname": "Ali",
+      "tg_username": "ali_k",
+      "age": 20,
+      "phone": "+998900005555",
+      "lessons": [
+        "l1",
+        "l2"
+      ],
+      "email": "ali@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    },
+    {
+      "id": "s2",
+      "tg_id": "tg-1002",
+      "lastname": "Islomova",
+      "firstname": "Laylo",
+      "tg_username": "laylo_i",
+      "age": 18,
+      "phone": "+998900006666",
+      "lessons": [
+        "l3"
+      ],
+      "email": "laylo@example.com",
+      "createdAt": "2025-08-02T15:00:00.000Z",
+      "updatedAt": "2025-08-05T16:00:00.000Z"
+    },
+    {
+      "id": "s4",
+      "tg_id": "tg-1004",
+      "lastname": "Tursunova",
+      "firstname": "Zuhra",
+      "tg_username": "zuhra_t",
+      "age": 19,
+      "phone": "+998900009999",
+      "lessons": [
+        "l6"
+      ],
+      "email": "zuhra@example.com",
+      "createdAt": "2025-08-04T19:00:00.000Z",
+      "updatedAt": "2025-08-05T19:00:00.000Z"
+    },
+    {
+      "id": "s4",
+      "tg_id": "tg-1005",
+      "lastname": "Abdullayev",
+      "firstname": "Bekzod",
+      "tg_username": "bekzod_a",
+      "age": 22,
+      "phone": "+998900008888",
+      "lessons": [
+        "l1",
+        "l2"
+      ],
+      "email": "bekzod@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    },
+    {
+      "id": "s5",
+      "tg_id": "tg-1006",
+      "lastname": "Saidova",
+      "firstname": "Dilnoza",
+      "tg_username": "dilnoza_s",
+      "age": 21,
+      "phone": "+998900007777",
+      "lessons": [
+        "l3",
+        "l4"
+      ],
+      "email": "dili@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-12T06:57:34.676Z"
+    },
+    {
+      "id": "s6",
+      "tg_id": "tg-1007",
+      "lastname": "Yusupova",
+      "firstname": "Gulnora",
+      "tg_username": "gulnora_y",
+      "age": 23,
+      "phone": "+998900010101",
+      "lessons": [
+        "l5",
+        "l6"
+      ],
+      "email": "dili@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    },
+    {
+      "id": "s7",
+      "tg_id": "tg-1008",
+      "lastname": "Mansurova",
+      "firstname": "Nargiza",
+      "tg_username": "nargiza_m",
+      "age": 20,
+      "phone": "+998900011111",
+      "lessons": [
+        "l7"
+      ],
+      "email": "nargiz@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "teacherId": "t1",
+      "startTime": "2025-08-10T08:00:00.000Z",
+      "endTime": "2025-08-10T09:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-101",
+      "studentId": "s1",
+      "meetingUrl": "https://zoom.us/j/123456",
+      "price": 20,
+      "isPaid": true,
+      "createdAt": "2025-08-01T08:00:00.000Z",
+      "updatedAt": "2025-08-01T08:00:00.000Z"
+    },
+    {
+      "id": "l2",
+      "teacherId": "t2",
+      "startTime": "2025-08-11T10:00:00.000Z",
+      "endTime": "2025-08-11T11:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-102",
+      "studentId": "s1",
+      "meetingUrl": "https://zoom.us/j/7891011",
+      "price": 15,
+      "isPaid": false,
+      "createdAt": "2025-08-02T08:00:00.000Z",
+      "updatedAt": "2025-08-02T08:00:00.000Z"
+    },
+    {
+      "id": "l3",
+      "teacherId": "t1",
+      "startTime": "2025-08-12T12:00:00.000Z",
+      "endTime": "2025-08-12T13:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-103",
+      "studentId": null,
+      "meetingUrl": null,
+      "price": 25,
+      "isPaid": false,
+      "createdAt": "2025-08-03T08:00:00.000Z",
+      "updatedAt": "2025-08-03T08:00:00.000Z"
+    },
+    {
+      "id": "l4",
+      "teacherId": "t2",
+      "startTime": "2025-08-14T09:00:00.000Z",
+      "endTime": "2025-08-14T10:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-104",
+      "studentId": null,
+      "meetingUrl": "https://zoom.us/j/444555",
+      "price": 18,
+      "isPaid": true,
+      "createdAt": "2025-08-04T08:00:00.000Z",
+      "updatedAt": "2025-08-04T08:00:00.000Z"
+    },
+    {
+      "id": "l5",
+      "teacherId": "t1",
+      "startTime": "2025-08-15T15:00:00.000Z",
+      "endTime": "2025-08-15T16:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-105",
+      "studentId": null,
+      "meetingUrl": "https://zoom.us/j/555666",
+      "price": 22,
+      "isPaid": false,
+      "createdAt": "2025-08-05T08:00:00.000Z",
+      "updatedAt": "2025-08-05T08:00:00.000Z"
+    },
+    {
+      "id": "l6",
+      "teacherId": null,
+      "startTime": "2025-08-16T14:00:00.000Z",
+      "endTime": "2025-08-16T15:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-106",
+      "studentId": null,
+      "meetingUrl": null,
+      "price": 19,
+      "isPaid": false,
+      "createdAt": "2025-08-06T08:00:00.000Z",
+      "updatedAt": "2025-08-06T08:00:00.000Z"
+    },
+    {
+      "id": "l7",
+      "teacherId": null,
+      "startTime": "2025-08-17T10:00:00.000Z",
+      "endTime": "2025-08-17T11:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-107",
+      "studentId": "s4",
+      "meetingUrl": "https://zoom.us/j/777888",
+      "price": 17,
+      "isPaid": true,
+      "createdAt": "2025-08-07T08:00:00.000Z",
+      "updatedAt": "2025-08-07T08:00:00.000Z"
+    }
+  ],
+  "lessonHistory": [
+    {
+      "id": "h1",
+      "studentId": "s1",
+      "teacherId": "t1",
+      "lessonId": "l1",
+      "startedAt": "2025-08-10T08:00:00.000Z",
+      "finishedAt": "2025-08-10T09:00:00.000Z",
+      "star": 5,
+      "feedback": "Great lesson!",
+      "createdAt": "2025-08-10T09:10:00.000Z",
+      "updatedAt": "2025-08-10T09:10:00.000Z"
+    },
+    {
+      "id": "h2",
+      "studentId": "s1",
+      "teacherId": "t2",
+      "lessonId": "l2",
+      "startedAt": "2025-08-11T10:00:00.000Z",
+      "finishedAt": "2025-08-11T11:00:00.000Z",
+      "star": 4,
+      "feedback": "Very helpful teacher.",
+      "createdAt": "2025-08-11T11:05:00.000Z",
+      "updatedAt": "2025-08-11T11:05:00.000Z"
+    },
+    {
+      "id": "h3",
+      "studentId": null,
+      "teacherId": "t2",
+      "lessonId": "l4",
+      "startedAt": "2025-08-14T09:00:00.000Z",
+      "finishedAt": "2025-08-14T10:00:00.000Z",
+      "star": 5,
+      "feedback": "Loved the class!",
+      "createdAt": "2025-08-14T10:05:00.000Z",
+      "updatedAt": "2025-08-14T10:05:00.000Z"
+    },
+    {
+      "id": "h4",
+      "studentId": null,
+      "teacherId": "t1",
+      "lessonId": "l5",
+      "startedAt": "2025-08-15T15:00:00.000Z",
+      "finishedAt": "2025-08-15T16:00:00.000Z",
+      "star": 3,
+      "feedback": "Good, but could improve.",
+      "createdAt": "2025-08-15T16:05:00.000Z",
+      "updatedAt": "2025-08-15T16:05:00.000Z"
+    },
+    {
+      "id": "h5",
+      "studentId": "s4",
+      "teacherId": null,
+      "lessonId": "l7",
+      "startedAt": "2025-08-17T10:00:00.000Z",
+      "finishedAt": "2025-08-17T11:00:00.000Z",
+      "star": 4,
+      "feedback": "Nice teacher, clear explanations.",
+      "createdAt": "2025-08-17T11:05:00.000Z",
+      "updatedAt": "2025-08-17T11:05:00.000Z"
+    }
+  ]
+}
