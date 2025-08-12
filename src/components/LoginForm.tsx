@@ -18,7 +18,7 @@ const Loginform = () => {
     e.preventDefault()
     setToken("1234") 
     toast.success("Tizimga muvaffaqiyatli kirildi!")
-    navigate("/admin/home")
+    navigate("/student/home")
   }
   return (
     <form className="bg-white rounded-xl shadow-lg px-6 py-8 w-full max-w-md space-y-6 mx-auto">
