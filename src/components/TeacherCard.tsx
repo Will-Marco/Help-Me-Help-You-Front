@@ -101,7 +101,7 @@ export const TeacherCard: React.FC<TeacherCardProps> = ({
           More
         </Button>
         <Button variant="secondary" size="sm" onClick={() => onEdit(teacher)}>
-          Update
+          Edit
         </Button>
         <ConfirmDeleteDialog
           open={deleteDialogOpen}
