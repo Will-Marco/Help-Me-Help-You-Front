@@ -7,6 +7,7 @@ export interface Teacher {
     phone: string;
     level: string;
     rating: number;
+    lessons: string[];
     experience: string;
     bio: string;
     isActive: boolean;

@@ -42,18 +42,19 @@
       "role": "TEACHER",
       "phone": "+998900003333",
       "level": "C1",
-      "rating": 2.5,
+      "rating": 4.2,
       "experience": "5 Years",
-      "bio": "Experienced English teacher.",
+      "bio": "Experienced English teacher with expertise in conversation and grammar.",
       "portfolioVideoLink": null,
       "lessons": [
         "l1",
         "l3",
-        "l5"
+        "l5",
+        "l14"
       ],
       "isActive": true,
       "createdAt": "2025-08-01T10:00:00.000Z",
-      "updatedAt": "2025-08-12T06:52:10.286Z"
+      "updatedAt": "2025-08-12T10:14:59.935Z"
     },
     {
       "id": "t2",
@@ -68,13 +69,14 @@
       "role": "TEACHER",
       "phone": "+998900004445",
       "level": "B2",
-      "rating": 5,
+      "rating": 4.8,
       "experience": "3 Years",
-      "bio": "Passionate about helping students succeed",
+      "bio": "Passionate about helping students succeed in English communication.",
       "portfolioVideoLink": null,
       "lessons": [
         "l2",
-        "l4"
+        "l4",
+        "l13"
       ],
       "isActive": true,
       "createdAt": "2025-08-02T11:00:00.000Z",
@@ -93,43 +95,241 @@
       "role": "TEACHER",
       "phone": "+998900007777",
       "level": "C2",
-      "rating": 5,
+      "rating": 4.9,
       "experience": "7 Years",
-      "bio": "Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. ",
+      "bio": "Dedicated English tutor with a passion for language learning.",
       "portfolioVideoLink": null,
       "lessons": [
         "l8",
-        "l9"
+        "l9",
+        "l10",
+        "l11",
+        "l12"
       ],
       "isActive": true,
       "createdAt": "2025-08-06T09:00:00.000Z",
       "updatedAt": "2025-08-11T12:06:38.597Z"
     },
     {
-      "id": "t11",
-      "name": "John Smith",
-      "googleId": "g-123",
-      "email": "john@example.com",
+      "id": "t4",
+      "name": "Emma Wilson",
+      "googleId": "g-890",
+      "email": "emma@example.com",
       "password": null,
       "googleRefreshToken": null,
       "googleAccessToken": null,
-      "image": "https://randomuser.me/api/portraits/men/1.jpg",
-      "hourPrice": 20,
+      "image": "https://randomuser.me/api/portraits/women/4.jpg",
+      "hourPrice": 22,
       "role": "TEACHER",
-      "phone": "+998900003333",
-      "level": "C1",
-      "rating": 2.5,
-      "experience": "5 Years",
-      "bio": "Experienced English teacher.",
+      "phone": "+998900008888",
+      "level": "C2",
+      "rating": 4.7,
+      "experience": "8 Years",
+      "bio": "Professional English teacher specializing in IELTS preparation.",
       "portfolioVideoLink": null,
       "lessons": [
-        "l1",
-        "l3",
-        "l5"
+        "l15",
+        "l16"
       ],
       "isActive": true,
-      "createdAt": "2025-08-01T10:00:00.000Z",
+      "createdAt": "2025-08-07T10:00:00.000Z",
       "updatedAt": "2025-08-12T05:38:51.690Z"
+    },
+    {
+      "id": "t5",
+      "name": "David Johnson",
+      "googleId": "g-901",
+      "email": "david@example.com",
+      "password": null,
+      "googleRefreshToken": null,
+      "googleAccessToken": null,
+      "image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "hourPrice": 25,
+      "role": "TEACHER",
+      "phone": "+998900009999",
+      "level": "C2",
+      "rating": 4.6,
+      "experience": "10 Years",
+      "bio": "Expert in business English and academic writing.",
+      "portfolioVideoLink": null,
+      "lessons": [
+        "l17",
+        "l18"
+      ],
+      "isActive": true,
+      "createdAt": "2025-08-08T11:00:00.000Z",
+      "updatedAt": "2025-08-11T12:06:32.529Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "s1",
+      "tg_id": "tg-1001",
+      "lastname": "Karimov",
+      "firstname": "Ali",
+      "tg_username": "ali_k55",
+      "age": 20,
+      "phone": "+998900005555",
+      "lessons": [
+        "l1",
+        "l2"
+      ],
+      "email": "ali@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-12T12:04:52.498Z"
+    },
+    {
+      "id": "s2",
+      "tg_id": "tg-1002",
+      "lastname": "Islomova",
+      "firstname": "Laylo",
+      "tg_username": "laylo_i",
+      "age": 18,
+      "phone": "+998900006666",
+      "lessons": [
+        "l3"
+      ],
+      "email": "laylo@example.com",
+      "createdAt": "2025-08-02T15:00:00.000Z",
+      "updatedAt": "2025-08-05T16:00:00.000Z"
+    },
+    {
+      "id": "s3",
+      "tg_id": "tg-1003",
+      "lastname": "Abdullayev",
+      "firstname": "Bekzod",
+      "tg_username": "bekzod_a",
+      "age": 22,
+      "phone": "+998900008888",
+      "lessons": [
+        "l4",
+        "l5"
+      ],
+      "email": "bekzod@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    },
+    {
+      "id": "s4",
+      "tg_id": "tg-1004",
+      "lastname": "Tursunova",
+      "firstname": "Zuhra",
+      "tg_username": "zuhra_t",
+      "age": 19,
+      "phone": "+998900009999",
+      "lessons": [
+        "l6",
+        "l7"
+      ],
+      "email": "zuhra@example.com",
+      "createdAt": "2025-08-04T19:00:00.000Z",
+      "updatedAt": "2025-08-05T19:00:00.000Z"
+    },
+    {
+      "id": "s5",
+      "tg_id": "tg-1005",
+      "lastname": "Saidova",
+      "firstname": "Dilnoza",
+      "tg_username": "dilnoza_s",
+      "age": 21,
+      "phone": "+998900010101",
+      "lessons": [
+        "l8",
+        "l9"
+      ],
+      "email": "dilnoza@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-12T06:57:34.676Z"
+    },
+    {
+      "id": "s6",
+      "tg_id": "tg-1006",
+      "lastname": "Yusupova",
+      "firstname": "Gulnora",
+      "tg_username": "gulnora_y",
+      "age": 23,
+      "phone": "+998900011111",
+      "lessons": [
+        "l10",
+        "l11"
+      ],
+      "email": "gulnora@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    },
+    {
+      "id": "s7",
+      "tg_id": "tg-1007",
+      "lastname": "Mansurova",
+      "firstname": "Nargiza",
+      "tg_username": "nargiza_m",
+      "age": 20,
+      "phone": "+998900012222",
+      "lessons": [
+        "l12"
+      ],
+      "email": "nargiz@example.com",
+      "createdAt": "2025-08-01T14:00:00.000Z",
+      "updatedAt": "2025-08-03T14:00:00.000Z"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "teacherId": "t1",
+      "teacher": {
+        "id": "t1",
+        "name": "John Smith",
+        "googleId": "g-123",
+        "email": "john@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "hourPrice": 20,
+        "role": "TEACHER",
+        "phone": "+998900003333",
+        "level": "C1",
+        "rating": 4.2,
+        "experience": "5 Years",
+        "bio": "Experienced English teacher with expertise in conversation and grammar.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l1",
+          "l3",
+          "l5",
+          "l14"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-01T10:00:00.000Z",
+        "updatedAt": "2025-08-12T10:14:59.935Z"
+      },
+      "studentId": "s1",
+      "student": {
+        "id": "s1",
+        "tg_id": "tg-1001",
+        "lastname": "Karimov",
+        "firstname": "Ali",
+        "tg_username": "ali_k55",
+        "age": 20,
+        "phone": "+998900005555",
+        "lessons": [
+          "l1",
+          "l2"
+        ],
+        "email": "ali@example.com",
+        "createdAt": "2025-08-01T14:00:00.000Z",
+        "updatedAt": "2025-08-12T12:04:52.498Z"
+      },
+      "startTime": "2025-08-10T08:00:00.000Z",
+      "endTime": "2025-08-10T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-101",
+      "meetingUrl": "https://zoom.us/j/123456",
+      "price": 20,
+      "isPaid": true,
+      "createdAt": "2025-08-01T08:00:00.000Z",
+      "updatedAt": "2025-08-10T09:00:00.000Z"
     },
     {
       "id": "t22",
@@ -172,7 +372,7 @@
       "rating": 5,
       "experience": "7 Years",
       "bio": "Dedicated English tutor with a passion for language learning.",
-      "portfolioVideoLink": "https://www.youtube.com/watch?v=WEG-419sHfU",
+      "portfolioVideoLink": null,
       "lessons": [
         "l8",
         "l9"
@@ -182,55 +382,114 @@
       "updatedAt": "2025-08-11T12:06:38.597Z"
     },
     {
-      "id": "t5",
-      "name": "John Smith",
-      "googleId": "g-123",
-      "email": "john@example.com",
-      "password": null,
-      "googleRefreshToken": null,
-      "googleAccessToken": null,
-      "image": "https://randomuser.me/api/portraits/men/1.jpg",
-      "hourPrice": 20,
-      "role": "TEACHER",
-      "phone": "+998900003333",
-      "level": "C1",
-      "rating": 2.5,
-      "experience": "5 Years",
-      "bio": "Experienced English teacher.",
-      "portfolioVideoLink": null,
-      "lessons": [
-        "l1",
-        "l3",
-        "l5"
-      ],
-      "isActive": true,
-      "createdAt": "2025-08-01T10:00:00.000Z",
-      "updatedAt": "2025-08-12T05:38:51.690Z"
+      "id": "l5",
+      "teacherId": "t1",
+      "teacher": {
+        "id": "t1",
+        "name": "John Smith",
+        "googleId": "g-123",
+        "email": "john@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "hourPrice": 20,
+        "role": "TEACHER",
+        "phone": "+998900003333",
+        "level": "C1",
+        "rating": 4.2,
+        "experience": "5 Years",
+        "bio": "Experienced English teacher with expertise in conversation and grammar.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l1",
+          "l3",
+          "l5",
+          "l14"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-01T10:00:00.000Z",
+        "updatedAt": "2025-08-12T10:14:59.935Z"
+      },
+      "studentId": "s4",
+      "student": {
+        "id": "s4",
+        "tg_id": "tg-1004",
+        "lastname": "Rustamova",
+        "firstname": "Dilnoza",
+        "tg_username": "dilnoza_r",
+        "age": 19,
+        "phone": "+998900008888",
+        "lessons": [
+          "l5"
+        ],
+        "email": "dilnoza@example.com",
+        "createdAt": "2025-08-05T11:00:00.000Z",
+        "updatedAt": "2025-08-07T14:00:00.000Z"
+      },
+      "startTime": "2025-08-14T08:00:00.000Z",
+      "endTime": "2025-08-14T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-105",
+      "meetingUrl": "https://zoom.us/j/567890",
+      "price": 20,
+      "isPaid": false,
+      "createdAt": "2025-08-05T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "t6",
-      "name": "Sara Lee",
-      "googleId": "g-456",
-      "email": "sara@example.com",
-      "password": null,
-      "googleRefreshToken": null,
-      "googleAccessToken": null,
-      "image": "https://randomuser.me/api/portraits/women/2.jpg",
-      "hourPrice": 15,
-      "role": "TEACHER",
-      "phone": "+998900004445",
-      "level": "B2",
-      "rating": 5,
-      "experience": "3 Years",
-      "bio": "Passionate about helping students succeed",
-      "portfolioVideoLink": null,
-      "lessons": [
-        "l2",
-        "l4"
-      ],
-      "isActive": true,
-      "createdAt": "2025-08-02T11:00:00.000Z",
-      "updatedAt": "2025-08-11T12:06:32.529Z"
+      "id": "l6",
+      "teacherId": "t3",
+      "teacher": {
+        "id": "t3",
+        "name": "Michael Brown",
+        "googleId": "g-789",
+        "email": "michael@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "hourPrice": 18,
+        "role": "TEACHER",
+        "phone": "+998900009999",
+        "level": "C2",
+        "rating": 4.5,
+        "experience": "7 Years",
+        "bio": "Specialized in business English and advanced grammar.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l6",
+          "l7"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-03T09:00:00.000Z",
+        "updatedAt": "2025-08-12T11:00:00.000Z"
+      },
+      "studentId": "s5",
+      "student": {
+        "id": "s5",
+        "tg_id": "tg-1005",
+        "lastname": "Tursunov",
+        "firstname": "Bekzod",
+        "tg_username": "bekzod_t",
+        "age": 25,
+        "phone": "+998900001111",
+        "lessons": [
+          "l6"
+        ],
+        "email": "bekzod@example.com",
+        "createdAt": "2025-08-06T10:00:00.000Z",
+        "updatedAt": "2025-08-08T12:00:00.000Z"
+      },
+      "startTime": "2025-08-15T08:00:00.000Z",
+      "endTime": "2025-08-15T09:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-106",
+      "meetingUrl": "https://zoom.us/j/678901",
+      "price": 18,
+      "isPaid": false,
+      "createdAt": "2025-08-06T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
       "id": "t7",
@@ -247,7 +506,7 @@
       "level": "C2",
       "rating": 5,
       "experience": "7 Years",
-      "bio": "Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. ",
+      "bio": "Dedicated English tutor with a passion for language learning.",
       "portfolioVideoLink": null,
       "lessons": [
         "l8",
@@ -258,252 +517,542 @@
       "updatedAt": "2025-08-11T12:06:38.597Z"
     },
     {
-      "id": "t8",
-      "name": "John Smith",
-      "googleId": "g-123",
-      "email": "john@example.com",
-      "password": null,
-      "googleRefreshToken": null,
-      "googleAccessToken": null,
-      "image": "https://randomuser.me/api/portraits/men/1.jpg",
-      "hourPrice": 20,
-      "role": "TEACHER",
-      "phone": "+998900003333",
-      "level": "C1",
-      "rating": 2.5,
-      "experience": "5 Years",
-      "bio": "Experienced English teacher.",
-      "portfolioVideoLink": null,
-      "lessons": [
-        "l1",
-        "l3",
-        "l5"
-      ],
-      "isActive": true,
-      "createdAt": "2025-08-01T10:00:00.000Z",
-      "updatedAt": "2025-08-12T05:38:51.690Z"
+      "id": "l8",
+      "teacherId": "t4",
+      "teacher": {
+        "id": "t4",
+        "name": "Emma Johnson",
+        "googleId": "g-321",
+        "email": "emma@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "hourPrice": 22,
+        "role": "TEACHER",
+        "phone": "+998900003131",
+        "level": "C1",
+        "rating": 4.9,
+        "experience": "6 Years",
+        "bio": "Native speaker focusing on pronunciation and fluency.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l8",
+          "l9"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-04T09:00:00.000Z",
+        "updatedAt": "2025-08-12T11:30:00.000Z"
+      },
+      "studentId": "s7",
+      "student": {
+        "id": "s7",
+        "tg_id": "tg-1007",
+        "lastname": "Abdullayeva",
+        "firstname": "Nigora",
+        "tg_username": "nigora_a",
+        "age": 23,
+        "phone": "+998900004444",
+        "lessons": [
+          "l8"
+        ],
+        "email": "nigora@example.com",
+        "createdAt": "2025-08-08T13:00:00.000Z",
+        "updatedAt": "2025-08-09T15:00:00.000Z"
+      },
+      "startTime": "2025-08-17T08:00:00.000Z",
+      "endTime": "2025-08-17T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-108",
+      "meetingUrl": "https://zoom.us/j/890123",
+      "price": 22,
+      "isPaid": false,
+      "createdAt": "2025-08-08T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "t9",
-      "name": "Sara Lee",
-      "googleId": "g-456",
-      "email": "sara@example.com",
-      "password": null,
-      "googleRefreshToken": null,
-      "googleAccessToken": null,
-      "image": "https://randomuser.me/api/portraits/women/2.jpg",
-      "hourPrice": 15,
-      "role": "TEACHER",
-      "phone": "+998900004445",
-      "level": "B2",
-      "rating": 5,
-      "experience": "3 Years",
-      "bio": "Passionate about helping students succeed",
-      "portfolioVideoLink": null,
-      "lessons": [
-        "l2",
-        "l4"
-      ],
-      "isActive": true,
-      "createdAt": "2025-08-02T11:00:00.000Z",
-      "updatedAt": "2025-08-11T12:06:32.529Z"
-    }
-  ],
-  "students": [
-    {
-      "id": "s1",
-      "tg_id": "tg-1001",
-      "lastname": "Karimov",
-      "firstname": "Ali",
-      "tg_username": "ali_k",
-      "age": 20,
-      "phone": "+998900005555",
-      "lessons": [
-        "l1",
-        "l2"
-      ],
-      "email": "ali@example.com",
-      "createdAt": "2025-08-01T14:00:00.000Z",
-      "updatedAt": "2025-08-03T14:00:00.000Z"
+      "id": "l9",
+      "teacherId": "t4",
+      "teacher": {
+        "id": "t4",
+        "name": "Emma Johnson",
+        "googleId": "g-321",
+        "email": "emma@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "hourPrice": 22,
+        "role": "TEACHER",
+        "phone": "+998900003131",
+        "level": "C1",
+        "rating": 4.9,
+        "experience": "6 Years",
+        "bio": "Native speaker focusing on pronunciation and fluency.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l8",
+          "l9"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-04T09:00:00.000Z",
+        "updatedAt": "2025-08-12T11:30:00.000Z"
+      },
+      "studentId": "s8",
+      "student": {
+        "id": "s8",
+        "tg_id": "tg-1008",
+        "lastname": "Rahmonov",
+        "firstname": "Shahzod",
+        "tg_username": "shahzod_r",
+        "age": 24,
+        "phone": "+998900005555",
+        "lessons": [
+          "l9"
+        ],
+        "email": "shahzod@example.com",
+        "createdAt": "2025-08-09T13:00:00.000Z",
+        "updatedAt": "2025-08-10T15:00:00.000Z"
+      },
+      "startTime": "2025-08-18T08:00:00.000Z",
+      "endTime": "2025-08-18T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-109",
+      "meetingUrl": "https://zoom.us/j/901234",
+      "price": 22,
+      "isPaid": false,
+      "createdAt": "2025-08-09T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "s2",
-      "tg_id": "tg-1002",
-      "lastname": "Islomova",
-      "firstname": "Laylo",
-      "tg_username": "laylo_i",
-      "age": 18,
-      "phone": "+998900006666",
-      "lessons": [
-        "l3"
-      ],
-      "email": "laylo@example.com",
-      "createdAt": "2025-08-02T15:00:00.000Z",
-      "updatedAt": "2025-08-05T16:00:00.000Z"
+      "id": "l10",
+      "teacherId": "t5",
+      "teacher": {
+        "id": "t5",
+        "name": "David Wilson",
+        "googleId": "g-654",
+        "email": "david@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "hourPrice": 17,
+        "role": "TEACHER",
+        "phone": "+998900006666",
+        "level": "B2",
+        "rating": 4.4,
+        "experience": "4 Years",
+        "bio": "Helping students improve everyday English and vocabulary.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l10",
+          "l11",
+          "l12"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-05T09:00:00.000Z",
+        "updatedAt": "2025-08-12T12:00:00.000Z"
+      },
+      "studentId": "s9",
+      "student": {
+        "id": "s9",
+        "tg_id": "tg-1009",
+        "lastname": "Usmonova",
+        "firstname": "Malika",
+        "tg_username": "malika_u",
+        "age": 20,
+        "phone": "+998900006666",
+        "lessons": [
+          "l10"
+        ],
+        "email": "malika@example.com",
+        "createdAt": "2025-08-10T13:00:00.000Z",
+        "updatedAt": "2025-08-11T15:00:00.000Z"
+      },
+      "startTime": "2025-08-19T08:00:00.000Z",
+      "endTime": "2025-08-19T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-110",
+      "meetingUrl": "https://zoom.us/j/012345",
+      "price": 17,
+      "isPaid": false,
+      "createdAt": "2025-08-10T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "s4",
-      "tg_id": "tg-1004",
-      "lastname": "Tursunova",
-      "firstname": "Zuhra",
-      "tg_username": "zuhra_t",
-      "age": 19,
-      "phone": "+998900009999",
-      "lessons": [
-        "l6"
-      ],
-      "email": "zuhra@example.com",
-      "createdAt": "2025-08-04T19:00:00.000Z",
-      "updatedAt": "2025-08-05T19:00:00.000Z"
+      "id": "l11",
+      "teacherId": "t5",
+      "teacher": {
+        "id": "t5",
+        "name": "David Wilson",
+        "googleId": "g-654",
+        "email": "david@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "hourPrice": 17,
+        "role": "TEACHER",
+        "phone": "+998900006666",
+        "level": "B2",
+        "rating": 4.4,
+        "experience": "4 Years",
+        "bio": "Helping students improve everyday English and vocabulary.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l10",
+          "l11",
+          "l12"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-05T09:00:00.000Z",
+        "updatedAt": "2025-08-12T12:00:00.000Z"
+      },
+      "studentId": "s10",
+      "student": {
+        "id": "s10",
+        "tg_id": "tg-1010",
+        "lastname": "Xolmatov",
+        "firstname": "Sanjar",
+        "tg_username": "sanjar_x",
+        "age": 26,
+        "phone": "+998900007777",
+        "lessons": [
+          "l11"
+        ],
+        "email": "sanjar@example.com",
+        "createdAt": "2025-08-11T13:00:00.000Z",
+        "updatedAt": "2025-08-12T15:00:00.000Z"
+      },
+      "startTime": "2025-08-20T08:00:00.000Z",
+      "endTime": "2025-08-20T09:00:00.000Z",
+      "status": "available",
+      "googleEventId": "evt-111",
+      "meetingUrl": "https://zoom.us/j/123456",
+      "price": 17,
+      "isPaid": false,
+      "createdAt": "2025-08-11T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "s4",
-      "tg_id": "tg-1005",
-      "lastname": "Abdullayev",
-      "firstname": "Bekzod",
-      "tg_username": "bekzod_a",
-      "age": 22,
-      "phone": "+998900008888",
-      "lessons": [
-        "l1",
-        "l2"
-      ],
-      "email": "bekzod@example.com",
-      "createdAt": "2025-08-01T14:00:00.000Z",
-      "updatedAt": "2025-08-03T14:00:00.000Z"
-    },
-    {
-      "id": "s5",
-      "tg_id": "tg-1006",
-      "lastname": "Saidova",
-      "firstname": "Dilnoza",
-      "tg_username": "dilnoza_s",
-      "age": 21,
-      "phone": "+998900007777",
-      "lessons": [
-        "l3",
-        "l4"
-      ],
-      "email": "dili@example.com",
-      "createdAt": "2025-08-01T14:00:00.000Z",
-      "updatedAt": "2025-08-12T06:57:34.676Z"
-    },
-    {
-      "id": "s6",
-      "tg_id": "tg-1007",
-      "lastname": "Yusupova",
-      "firstname": "Gulnora",
-      "tg_username": "gulnora_y",
-      "age": 23,
-      "phone": "+998900010101",
-      "lessons": [
-        "l5",
-        "l6"
-      ],
-      "email": "dili@example.com",
-      "createdAt": "2025-08-01T14:00:00.000Z",
-      "updatedAt": "2025-08-03T14:00:00.000Z"
-    },
-    {
-      "id": "s7",
-      "tg_id": "tg-1008",
-      "lastname": "Mansurova",
-      "firstname": "Nargiza",
-      "tg_username": "nargiza_m",
-      "age": 20,
-      "phone": "+998900011111",
-      "lessons": [
-        "l7"
-      ],
-      "email": "nargiz@example.com",
-      "createdAt": "2025-08-01T14:00:00.000Z",
-      "updatedAt": "2025-08-03T14:00:00.000Z"
-    }
-  ],
-  "lessons": [
-    {
-      "id": "l1",
-      "teacherId": "t1",
-      "startTime": "2025-08-10T08:00:00.000Z",
-      "endTime": "2025-08-10T09:00:00.000Z",
+      "id": "l12",
+      "teacherId": "t5",
+      "studentId": "s11",
+      "startTime": "2025-08-21T08:00:00.000Z",
+      "endTime": "2025-08-21T09:00:00.000Z",
       "status": "booked",
-      "googleEventId": "evt-101",
+      "googleEventId": "evt-112",
+      "meetingUrl": "https://zoom.us/j/234567",
+      "price": 17,
+      "isPaid": false,
+      "createdAt": "2025-08-12T08:00:00.000Z",
+      "updatedAt": "2025-08-13T11:29:52.994Z"
+    }
+  ],
+  "lessonHistory": [
+    {
+      "id": "lh1",
+      "lessonId": "l1",
+      "teacherId": "t1",
+      "teacher": {
+        "id": "t1",
+        "name": "John Smith",
+        "googleId": "g-123",
+        "email": "john@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "hourPrice": 20,
+        "role": "TEACHER",
+        "phone": "+998900001111",
+        "level": "C1",
+        "rating": 4.8,
+        "experience": "5 Years",
+        "bio": "Expert in conversational English and IELTS preparation.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-01T09:00:00.000Z",
+        "updatedAt": "2025-08-12T10:00:00.000Z"
+      },
       "studentId": "s1",
+      "student": {
+        "id": "s1",
+        "tg_id": "tg-1001",
+        "lastname": "Karimov",
+        "firstname": "Ali",
+        "tg_username": "ali_k",
+        "age": 20,
+        "phone": "+998900009999",
+        "lessons": [
+          "l1"
+        ],
+        "email": "ali@example.com",
+        "createdAt": "2025-08-01T13:00:00.000Z",
+        "updatedAt": "2025-08-02T14:00:00.000Z"
+      },
+      "startTime": "2025-08-10T10:00:00.000Z",
+      "endTime": "2025-08-10T11:00:00.000Z",
+      "status": "completed",
+      "googleEventId": "evt-101",
+      "feedback": "Great session, learned a lot about English grammar.",
+      "star": 5,
       "meetingUrl": "https://zoom.us/j/123456",
       "price": 20,
       "isPaid": true,
       "createdAt": "2025-08-01T08:00:00.000Z",
-      "updatedAt": "2025-08-01T08:00:00.000Z"
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "l2",
-      "teacherId": "t2",
+      "id": "lh2",
+      "lessonId": "l2",
+      "teacherId": "t1",
+      "teacher": {
+        "id": "t1",
+        "name": "John Smith",
+        "googleId": "g-123",
+        "email": "john@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "hourPrice": 20,
+        "role": "TEACHER",
+        "phone": "+998900001111",
+        "level": "C1",
+        "rating": 4.8,
+        "experience": "5 Years",
+        "bio": "Expert in conversational English and IELTS preparation.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-01T09:00:00.000Z",
+        "updatedAt": "2025-08-12T10:00:00.000Z"
+      },
+      "studentId": "s2",
+      "student": {
+        "id": "s2",
+        "tg_id": "tg-1002",
+        "lastname": "Ismailova",
+        "firstname": "Madina",
+        "tg_username": "madina_i",
+        "age": 19,
+        "phone": "+998900001212",
+        "lessons": [
+          "l2"
+        ],
+        "email": "madina@example.com",
+        "createdAt": "2025-08-02T13:00:00.000Z",
+        "updatedAt": "2025-08-03T14:00:00.000Z"
+      },
       "startTime": "2025-08-11T10:00:00.000Z",
       "endTime": "2025-08-11T11:00:00.000Z",
-      "status": "booked",
+      "status": "completed",
       "googleEventId": "evt-102",
-      "studentId": "s1",
-      "meetingUrl": "https://zoom.us/j/7891011",
-      "price": 15,
-      "isPaid": false,
+      "feedback": "Very helpful, improved my speaking skills significantly.",
+      "star": 4,
+      "meetingUrl": "https://zoom.us/j/234567",
+      "price": 20,
+      "isPaid": true,
       "createdAt": "2025-08-02T08:00:00.000Z",
-      "updatedAt": "2025-08-02T08:00:00.000Z"
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "l3",
+      "id": "lh3",
+      "lessonId": "l3",
       "teacherId": "t1",
-      "startTime": "2025-08-12T12:00:00.000Z",
-      "endTime": "2025-08-12T13:00:00.000Z",
-      "status": "available",
+      "teacher": {
+        "id": "t1",
+        "name": "John Smith",
+        "googleId": "g-123",
+        "email": "john@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "hourPrice": 20,
+        "role": "TEACHER",
+        "phone": "+998900001111",
+        "level": "C1",
+        "rating": 4.8,
+        "experience": "5 Years",
+        "bio": "Expert in conversational English and IELTS preparation.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-01T09:00:00.000Z",
+        "updatedAt": "2025-08-12T10:00:00.000Z"
+      },
+      "studentId": "s3",
+      "student": {
+        "id": "s3",
+        "tg_id": "tg-1003",
+        "lastname": "Tursunov",
+        "firstname": "Bekzod",
+        "tg_username": "bekzod_t",
+        "age": 22,
+        "phone": "+998900002323",
+        "lessons": [
+          "l3"
+        ],
+        "email": "bekzod@example.com",
+        "createdAt": "2025-08-03T13:00:00.000Z",
+        "updatedAt": "2025-08-04T14:00:00.000Z"
+      },
+      "startTime": "2025-08-12T10:00:00.000Z",
+      "endTime": "2025-08-12T11:00:00.000Z",
+      "status": "completed",
       "googleEventId": "evt-103",
-      "studentId": null,
-      "meetingUrl": null,
-      "price": 25,
-      "isPaid": false,
+      "feedback": "Excellent lesson, learned a lot about English grammar.",
+      "star": 5,
+      "meetingUrl": "https://zoom.us/j/345678",
+      "price": 20,
+      "isPaid": true,
       "createdAt": "2025-08-03T08:00:00.000Z",
-      "updatedAt": "2025-08-03T08:00:00.000Z"
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "l4",
+      "id": "lh4",
+      "lessonId": "l4",
       "teacherId": "t2",
-      "startTime": "2025-08-14T09:00:00.000Z",
-      "endTime": "2025-08-14T10:00:00.000Z",
-      "status": "booked",
+      "teacher": {
+        "id": "t2",
+        "name": "Emma Johnson",
+        "googleId": "g-456",
+        "email": "emma@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "hourPrice": 15,
+        "role": "TEACHER",
+        "phone": "+998900002222",
+        "level": "B2",
+        "rating": 4.6,
+        "experience": "3 Years",
+        "bio": "Specialized in grammar and business English.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l4",
+          "l5",
+          "l6"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-02T09:00:00.000Z",
+        "updatedAt": "2025-08-12T10:30:00.000Z"
+      },
+      "studentId": "s4",
+      "student": {
+        "id": "s4",
+        "tg_id": "tg-1004",
+        "lastname": "Sattorova",
+        "firstname": "Gulbahor",
+        "tg_username": "gulbahor_s",
+        "age": 25,
+        "phone": "+998900004444",
+        "lessons": [
+          "l4"
+        ],
+        "email": "gulbahor@example.com",
+        "createdAt": "2025-08-04T13:00:00.000Z",
+        "updatedAt": "2025-08-05T14:00:00.000Z"
+      },
+      "startTime": "2025-08-13T08:00:00.000Z",
+      "endTime": "2025-08-13T09:00:00.000Z",
+      "status": "completed",
       "googleEventId": "evt-104",
-      "studentId": null,
-      "meetingUrl": "https://zoom.us/j/444555",
-      "price": 18,
+      "feedback": "Very informative, helped me with my business English.",
+      "star": 4,
+      "meetingUrl": "https://zoom.us/j/456789",
+      "price": 15,
       "isPaid": true,
       "createdAt": "2025-08-04T08:00:00.000Z",
-      "updatedAt": "2025-08-04T08:00:00.000Z"
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "l5",
-      "teacherId": "t1",
-      "startTime": "2025-08-15T15:00:00.000Z",
-      "endTime": "2025-08-15T16:00:00.000Z",
-      "status": "booked",
+      "id": "lh5",
+      "lessonId": "l5",
+      "teacherId": "t2",
+      "teacher": {
+        "id": "t2",
+        "name": "Emma Johnson",
+        "googleId": "g-456",
+        "email": "emma@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "hourPrice": 15,
+        "role": "TEACHER",
+        "phone": "+998900002222",
+        "level": "B2",
+        "rating": 4.6,
+        "experience": "3 Years",
+        "bio": "Specialized in grammar and business English.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l4",
+          "l5",
+          "l6"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-02T09:00:00.000Z",
+        "updatedAt": "2025-08-12T10:30:00.000Z"
+      },
+      "studentId": "s5",
+      "student": {
+        "id": "s5",
+        "tg_id": "tg-1005",
+        "lastname": "Abdullayev",
+        "firstname": "Sherzod",
+        "tg_username": "sherzod_a",
+        "age": 23,
+        "phone": "+998900005555",
+        "lessons": [
+          "l5"
+        ],
+        "email": "sherzod@example.com",
+        "createdAt": "2025-08-05T13:00:00.000Z",
+        "updatedAt": "2025-08-06T14:00:00.000Z"
+      },
+      "startTime": "2025-08-14T08:00:00.000Z",
+      "endTime": "2025-08-14T09:00:00.000Z",
+      "status": "completed",
       "googleEventId": "evt-105",
-      "studentId": null,
-      "meetingUrl": "https://zoom.us/j/555666",
-      "price": 22,
-      "isPaid": false,
+      "feedback": "Good session, learned a lot about business vocabulary.",
+      "star": 5,
+      "meetingUrl": "https://zoom.us/j/567890",
+      "price": 15,
+      "isPaid": true,
       "createdAt": "2025-08-05T08:00:00.000Z",
-      "updatedAt": "2025-08-05T08:00:00.000Z"
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
       "id": "l6",
       "teacherId": "t1",
-      "startTime": "2025-08-15T14:00:00.000Z",
-      "endTime": "2025-08-15T15:00:00.000Z",
+      "startTime": "2025-08-16T14:00:00.000Z",
+      "endTime": "2025-08-16T15:00:00.000Z",
       "status": "available",
       "googleEventId": "evt-106",
       "studentId": null,
       "meetingUrl": null,
       "price": 19,
       "isPaid": false,
-      "createdAt": "2025-08-15T08:09:00.000Z",
-      "updatedAt": "2025-08-15T08:10:00.000Z"
+      "createdAt": "2025-08-06T08:00:00.000Z",
+      "updatedAt": "2025-08-06T08:00:00.000Z"
     },
     {
       "id": "l7",
@@ -518,20 +1067,6 @@
       "isPaid": true,
       "createdAt": "2025-08-07T08:00:00.000Z",
       "updatedAt": "2025-08-07T08:00:00.000Z"
-    },
-    {
-      "id": "l232",
-      "teacherId": "t1",
-      "startTime": "2025-08-15T10:00:00.000Z",
-      "endTime": "2025-08-15T11:00:00.000Z",
-      "status": "booked",
-      "googleEventId": "evt-156",
-      "studentId": "s1",
-      "meetingUrl": "https://zoom.us/j/7891011",
-      "price": 15,
-      "isPaid": false,
-      "createdAt": "2025-08-02T08:00:00.000Z",
-      "updatedAt": "2025-08-02T08:00:00.000Z"
     }
   ],
   "lessonHistory": [
@@ -567,33 +1102,69 @@
       "startedAt": "2025-08-14T09:00:00.000Z",
       "finishedAt": "2025-08-14T10:00:00.000Z",
       "star": 5,
-      "feedback": "Loved the class!",
-      "createdAt": "2025-08-14T10:05:00.000Z",
-      "updatedAt": "2025-08-14T10:05:00.000Z"
+      "meetingUrl": "https://zoom.us/j/789012",
+      "price": 18,
+      "isPaid": true,
+      "createdAt": "2025-08-07T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     },
     {
-      "id": "h4",
-      "studentId": null,
-      "teacherId": "t1",
-      "lessonId": "l5",
-      "startedAt": "2025-08-15T15:00:00.000Z",
-      "finishedAt": "2025-08-15T16:00:00.000Z",
-      "star": 3,
-      "feedback": "Good, but could improve.",
-      "createdAt": "2025-08-15T16:05:00.000Z",
-      "updatedAt": "2025-08-15T16:05:00.000Z"
-    },
-    {
-      "id": "h5",
-      "studentId": "s4",
-      "teacherId": null,
-      "lessonId": "l7",
-      "startedAt": "2025-08-17T10:00:00.000Z",
-      "finishedAt": "2025-08-17T11:00:00.000Z",
-      "star": 4,
-      "feedback": "Nice teacher, clear explanations.",
-      "createdAt": "2025-08-17T11:05:00.000Z",
-      "updatedAt": "2025-08-17T11:05:00.000Z"
+      "id": "lh8",
+      "lessonId": "l8",
+      "teacherId": "t3",
+      "teacher": {
+        "id": "t3",
+        "name": "Michael Brown",
+        "googleId": "g-789",
+        "email": "michael@example.com",
+        "password": null,
+        "googleRefreshToken": null,
+        "googleAccessToken": null,
+        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "hourPrice": 18,
+        "role": "TEACHER",
+        "phone": "+998900003333",
+        "level": "C2",
+        "rating": 4.9,
+        "experience": "7 Years",
+        "bio": "Pronunciation and accent reduction coach.",
+        "portfolioVideoLink": null,
+        "lessons": [
+          "l7",
+          "l8",
+          "l9"
+        ],
+        "isActive": true,
+        "createdAt": "2025-08-03T09:00:00.000Z",
+        "updatedAt": "2025-08-12T11:00:00.000Z"
+      },
+      "studentId": "s8",
+      "student": {
+        "id": "s8",
+        "tg_id": "tg-1008",
+        "lastname": "Rasulova",
+        "firstname": "Nilufar",
+        "tg_username": "nilufar_r",
+        "age": 24,
+        "phone": "+998900008888",
+        "lessons": [
+          "l8"
+        ],
+        "email": "nilufar@example.com",
+        "createdAt": "2025-08-08T13:00:00.000Z",
+        "updatedAt": "2025-08-09T14:00:00.000Z"
+      },
+      "startTime": "2025-08-17T08:00:00.000Z",
+      "endTime": "2025-08-17T09:00:00.000Z",
+      "status": "completed",
+      "googleEventId": "evt-108",
+      "feedback": "Very useful for improving my accent.",
+      "star": 5,
+      "meetingUrl": "https://zoom.us/j/890123",
+      "price": 18,
+      "isPaid": true,
+      "createdAt": "2025-08-08T08:00:00.000Z",
+      "updatedAt": "2025-08-12T09:00:00.000Z"
     }
   ]
 }

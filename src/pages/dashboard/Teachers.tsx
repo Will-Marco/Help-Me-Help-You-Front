@@ -12,12 +12,12 @@ import PageLoading from "@/components/PageLoading";
 const API = "http://localhost:3000";
 
 const teacherDetailsFields = [
-  { label: "Email", key: "email" },
-  { label: "Phone", key: "phone" },
+  { label: "Email", key: "email", copyable: true },
+  { label: "Phone", key: "phone", copyable: true },
   { label: "Level", key: "level" },
   { label: "Experience", key: "experience" },
   { label: "Price/hr", key: "hourPrice" },
-  { label: "Rating", key: "rating" },
+  { label: "Rating", key: "rating", isRating: true },
   { label: "Bio", key: "bio" },
 ];
 

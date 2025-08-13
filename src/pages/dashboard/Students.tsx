@@ -16,8 +16,9 @@ type DialogType = "update" | "delete" | "details" | null;
 const studentFields = [
   { label: "First Name", key: "firstname" },
   { label: "Last Name", key: "lastname" },
-  { label: "Email", key: "email", type: "email" },
-  { label: "Phone", key: "phone" },
+  {label: "TG_Username", key: "tg_username", copyable: true },
+  { label: "Email", key: "email", type: "email" , copyable: true },
+  { label: "Phone", key: "phone" , copyable: true },
   { label: "Age", key: "age", type: "number" },
 ];
 

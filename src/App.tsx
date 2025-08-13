@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      {cookies.token ? <StudentRoute /> : <AuthRoute />}
-      {/* {cookies.token ? <DashboardLayout /> : <AuthRoute />} */}
+      {/* {cookies.token ? <StudentRoute /> : <AuthRoute />} */}
+      {cookies.token ? <DashboardLayout /> : <AuthRoute />}
 
       <Toaster position="top-right" richColors />
     </>
