@@ -1,4 +1,4 @@
-import StudentHomeModule from '@/modules/Student/StudentHome';
+import { StudentHomeModule } from "@/modules/Student";
 
 const StudentHome = () => {
   return (

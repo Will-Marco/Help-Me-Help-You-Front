@@ -1,11 +1,11 @@
-import { StudentPaths } from "@/hooks/Path"
-import { StudentHome } from "@/pages/Student"
+import type { DashboardRouteType } from "@/@types/DashboardRouteType"
+import { StudentDashboardRouteList } from "@/hooks/Path"
 import { Route, Routes } from "react-router-dom"
 
 const StudentRoute = () => {
     return (
         <Routes>
-            <Route path={StudentPaths.studentHome} element={<StudentHome />} />
+            {StudentDashboardRouteList.map((item:DashboardRouteType) => <Route key={item.id} path={item.path} element={item.element}/>)}
         </Routes>
     )
 }

@@ -10,6 +10,7 @@ export interface Teacher {
     experience: string;
     bio: string;
     isActive: boolean;
+    portfolioVideoLink?: string;
     createdAt: string;
     updatedAt: string;
   }

@@ -23,6 +23,8 @@ import {
   Settings as SettingsIcon,
   Star
 } from 'lucide-react';
+import { StudentHome } from '@/pages/Student';
+import StudentTeacher from '@/pages/Student/StudentTeacher';
 
 // 📌 Barcha Path'lar
 export const Path = {
@@ -44,7 +46,13 @@ export const Path = {
 export const StudentPaths = {
   studentHome: '/student/home',
   studentProfile: '/student/profile',
+  studentTeachers: '/student/teacher/:id',
 }
+
+export const StudentDashboardRouteList = [
+  { id: 1, path: StudentPaths.studentHome, element: <StudentHome />},
+  { id: 2, path: StudentPaths.studentTeachers, element: <StudentTeacher />},
+]
 
 // 📌 Route ro‘yxati (Router uchun)
 export const DashboardRouteList = [

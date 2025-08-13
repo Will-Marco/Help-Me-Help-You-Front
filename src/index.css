@@ -119,6 +119,11 @@
   }
 }
 
+.containers {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 body{
   background-color: #e0e0e0;
 }

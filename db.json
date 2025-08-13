@@ -95,7 +95,7 @@
       "level": "C2",
       "rating": 5,
       "experience": "7 Years",
-      "bio": "Dedicated English tutor with a passion for language learning.",
+      "bio": "Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. ",
       "portfolioVideoLink": null,
       "lessons": [
         "l8",
@@ -172,7 +172,7 @@
       "rating": 5,
       "experience": "7 Years",
       "bio": "Dedicated English tutor with a passion for language learning.",
-      "portfolioVideoLink": null,
+      "portfolioVideoLink": "https://www.youtube.com/watch?v=WEG-419sHfU",
       "lessons": [
         "l8",
         "l9"
@@ -247,7 +247,7 @@
       "level": "C2",
       "rating": 5,
       "experience": "7 Years",
-      "bio": "Dedicated English tutor with a passion for language learning.",
+      "bio": "Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. Dedicated English tutor with a passion for language learning. ",
       "portfolioVideoLink": null,
       "lessons": [
         "l8",
@@ -494,16 +494,16 @@
     {
       "id": "l6",
       "teacherId": "t1",
-      "startTime": "2025-08-16T14:00:00.000Z",
-      "endTime": "2025-08-16T15:00:00.000Z",
+      "startTime": "2025-08-15T14:00:00.000Z",
+      "endTime": "2025-08-15T15:00:00.000Z",
       "status": "available",
       "googleEventId": "evt-106",
       "studentId": null,
       "meetingUrl": null,
       "price": 19,
       "isPaid": false,
-      "createdAt": "2025-08-06T08:00:00.000Z",
-      "updatedAt": "2025-08-06T08:00:00.000Z"
+      "createdAt": "2025-08-15T08:09:00.000Z",
+      "updatedAt": "2025-08-15T08:10:00.000Z"
     },
     {
       "id": "l7",
@@ -518,6 +518,20 @@
       "isPaid": true,
       "createdAt": "2025-08-07T08:00:00.000Z",
       "updatedAt": "2025-08-07T08:00:00.000Z"
+    },
+    {
+      "id": "l232",
+      "teacherId": "t1",
+      "startTime": "2025-08-15T10:00:00.000Z",
+      "endTime": "2025-08-15T11:00:00.000Z",
+      "status": "booked",
+      "googleEventId": "evt-156",
+      "studentId": "s1",
+      "meetingUrl": "https://zoom.us/j/7891011",
+      "price": 15,
+      "isPaid": false,
+      "createdAt": "2025-08-02T08:00:00.000Z",
+      "updatedAt": "2025-08-02T08:00:00.000Z"
     }
   ],
   "lessonHistory": [

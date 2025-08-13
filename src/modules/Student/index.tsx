@@ -1,2 +1,4 @@
 import StudentHomeModule from "./StudentHome";
-export { StudentHomeModule as StudentHome };
+import StudentTeacherModule from "./StudentTeacher";
+
+export { StudentHomeModule, StudentTeacherModule };
