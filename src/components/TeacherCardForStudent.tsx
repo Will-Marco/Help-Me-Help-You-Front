@@ -51,12 +51,12 @@ const TeacherCardForStudent: FC<Props> = ({
       ))
     ) : (
       <Badge variant="outline" className="text-gray-500 text-xs lg:text-sm w-full">
-        There are no class times available for this day.
+        no class time
       </Badge>
     );
 
   return (
-    <div className={`border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow ${oneTeacher ? "mx-auto" : ""}`}>
+    <div className={`border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow `}>
       {/* Teacher Image */}
       <img
         className="w-full h-[200px] lg:h-[300px] object-cover rounded-t-lg"

@@ -27,18 +27,25 @@ const StudentTeacherModule = () => {
   }, [teacherId]);
 
   return (
-    <div>
-      <button
-        onClick={() => navigate(StudentPaths.studentHome)}
-        className="flex items-center gap-1 mb-4 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300"
-      >
-        ← Back
-      </button>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-        {teacher && <TeacherCardForStudent teacher={teacher} lessons={lessons} oneTeacher={true} />}
-      </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <button
+      onClick={() => navigate(StudentPaths.studentHome)}
+      className="flex items-center gap-1 mb-4 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 transition-colors"
+    >
+      ← Back
+    </button>
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+      {teacher && (
+        <TeacherCardForStudent
+          teacher={teacher}
+          lessons={lessons}
+          oneTeacher={true}
+        />
+      )}
     </div>
-  );
+  </div>
+);
+
 };
 
 export default StudentTeacherModule;
