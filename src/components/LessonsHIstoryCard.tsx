@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ConfirmDeleteDialog } from "@/components/ConfirmDeleteDialog";
-import { Calendar, Clock, Star, MessageSquare, Eye, Edit, Trash2 } from "lucide-react";
+import { Calendar, Clock, Star, MessageSquare, Eye, Trash2 } from "lucide-react";
 import type { LessonHistory } from "@/@types/LessonHistory";
 
 type EnhancedLessonHistoryCardProps = {
@@ -32,7 +32,6 @@ const getStarColor = (star: number) => {
 export const EnhancedLessonHistoryCard: React.FC<EnhancedLessonHistoryCardProps> = ({
   history,
   onMore,
-  onEdit,
   onDelete,
 }) => {
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
@@ -97,7 +96,7 @@ export const EnhancedLessonHistoryCard: React.FC<EnhancedLessonHistoryCardProps>
             <span>View Details</span>
           </Button>
 
-          <Button
+          {/* <Button
             variant="outline"
             size="sm"
             onClick={() => onEdit(history)}
@@ -105,7 +104,7 @@ export const EnhancedLessonHistoryCard: React.FC<EnhancedLessonHistoryCardProps>
           >
             <Edit className="h-4 w-4" />
             <span>Edit</span>
-          </Button>
+          </Button> */}
 
           <ConfirmDeleteDialog
             open={deleteDialogOpen}

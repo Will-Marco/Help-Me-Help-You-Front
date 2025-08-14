@@ -13,44 +13,50 @@ const Home = () => {
     lessons: 0,
     booked: 0,
     finished: 0,
-    canceled: 0
+    canceled: 0,
+    available: 0
   });
 
   useEffect(() => {
     const fetchData = async () => {
-      const [teachersRes, studentsRes, lessonsRes] = await Promise.all([
+      const [teachersRes, studentsRes, lessonsRes, historyRes] = await Promise.all([
         fetch("http://localhost:3000/teachers").then(r => r.json()),
         fetch("http://localhost:3000/students").then(r => r.json()),
-        fetch("http://localhost:3000/lessons").then(r => r.json())
+        fetch("http://localhost:3000/lessons").then(r => r.json()),
+        fetch("http://localhost:3000/lessonHistory").then(r => r.json())
       ]);
-
-      const booked = lessonsRes.filter((l:any) => l.status === "booked").length;
-      const canceled = lessonsRes.filter((l:any) => l.status === "canceled").length;
-      const finished = lessonsRes.filter((l:any) => l.isFinished).length;
-
+  
+      const booked = lessonsRes.filter((l: any) => l.status === "booked").length;
+      const available = lessonsRes.filter((l: any) => l.status === "available").length;
+      const canceled = lessonsRes.filter((l: any) => l.status === "cancelled").length;
+      const finished = historyRes.length; // ✅ lessonHistory uzunligi
+  
       setStats({
-        teachers: teachersRes.length  + 100,
-        students: studentsRes.length + 500,
-        lessons: lessonsRes.length + 2500,
+        teachers: teachersRes.length,
+        students: studentsRes.length,
+        lessons: lessonsRes.length,
         booked,
         finished,
-        canceled
+        canceled,
+        available
       });
-
+  
       setLoading(false);
     };
-
+  
     fetchData();
   }, []);
+  
 
   if (loading) {
     return <div className="p-6 text-gray-500">Loading...</div>;
   }
 
   const pieData = [
-    { name: "Booked", value: stats.booked + 350 },
-    { name: "Finished", value: stats.finished + 2000 },
-    { name: "Canceled", value: stats.canceled  + 157}
+    { name: "Booked", value: stats.booked },
+    { name: "Finished", value: stats.finished },
+    { name: "Canceled", value: stats.canceled},
+    { name: "Available", value: stats.available}
   ];
 
   const barData = [
@@ -64,11 +70,11 @@ const Home = () => {
     { month: "Aug", lessons: 1800 },
   ];
 
-  const COLORS = ["#FACC15", "#14B8A6", "#EF4444"];
+  const COLORS = ["#FACC15", "#14B8A6", "#EF4444", "#3B82F6"];
+
 
   return (
     <div className="p-6 grid gap-6">
-      {/* Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <StatCard
           title="Teachers"
@@ -93,9 +99,7 @@ const Home = () => {
         />
       </div>
 
-      {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Bar Chart */}
         <Card>
           <CardHeader>
             <CardTitle>Lessons per Month</CardTitle>
@@ -112,7 +116,6 @@ const Home = () => {
           </CardContent>
         </Card>
 
-        {/* Pie Chart */}
         <Card>
           <CardHeader>
             <CardTitle>Lesson Status Distribution</CardTitle>
