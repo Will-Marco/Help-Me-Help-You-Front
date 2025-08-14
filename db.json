@@ -42,11 +42,16 @@
       "role": "TEACHER",
       "phone": "+998900003333",
       "level": "C1",
-      "rating": 4.2,
+      "rating": 2.2,
       "experience": "5 Years",
       "bio": "Experienced English teacher with expertise in conversation and grammar.",
       "portfolioVideoLink": null,
-      "lessons": ["l1", "l3", "l5", "l14"],
+      "lessons": [
+        "l1",
+        "l3",
+        "l5",
+        "l14"
+      ],
       "isActive": true,
       "createdAt": "2025-08-01T10:00:00.000Z",
       "updatedAt": "2025-08-12T10:14:59.935Z"
@@ -64,11 +69,15 @@
       "role": "TEACHER",
       "phone": "+998900004445",
       "level": "B2",
-      "rating": 4.8,
+      "rating": 3.8,
       "experience": "3 Years",
       "bio": "Passionate about helping students succeed in English communication.",
       "portfolioVideoLink": null,
-      "lessons": ["l2", "l4", "l13"],
+      "lessons": [
+        "l2",
+        "l4",
+        "l13"
+      ],
       "isActive": true,
       "createdAt": "2025-08-02T11:00:00.000Z",
       "updatedAt": "2025-08-11T12:06:32.529Z"
@@ -90,7 +99,13 @@
       "experience": "7 Years",
       "bio": "Dedicated English tutor with a passion for language learning.",
       "portfolioVideoLink": null,
-      "lessons": ["l8", "l9", "l10", "l11", "l12"],
+      "lessons": [
+        "l8",
+        "l9",
+        "l10",
+        "l11",
+        "l12"
+      ],
       "isActive": true,
       "createdAt": "2025-08-06T09:00:00.000Z",
       "updatedAt": "2025-08-11T12:06:38.597Z"
@@ -112,7 +127,10 @@
       "experience": "8 Years",
       "bio": "Professional English teacher specializing in IELTS preparation.",
       "portfolioVideoLink": null,
-      "lessons": ["l15", "l16"],
+      "lessons": [
+        "l15",
+        "l16"
+      ],
       "isActive": true,
       "createdAt": "2025-08-07T10:00:00.000Z",
       "updatedAt": "2025-08-12T05:38:51.690Z"
@@ -130,11 +148,14 @@
       "role": "TEACHER",
       "phone": "+998900009999",
       "level": "C2",
-      "rating": 4.6,
+      "rating": 5,
       "experience": "10 Years",
       "bio": "Expert in business English and academic writing.",
       "portfolioVideoLink": null,
-      "lessons": ["l17", "l18"],
+      "lessons": [
+        "l17",
+        "l18"
+      ],
       "isActive": true,
       "createdAt": "2025-08-08T11:00:00.000Z",
       "updatedAt": "2025-08-11T12:06:32.529Z"
@@ -149,7 +170,10 @@
       "tg_username": "ali_k55",
       "age": 20,
       "phone": "+998900005555",
-      "lessons": ["l1", "l2"],
+      "lessons": [
+        "l1",
+        "l2"
+      ],
       "email": "ali@example.com",
       "createdAt": "2025-08-01T14:00:00.000Z",
       "updatedAt": "2025-08-12T12:04:52.498Z"
@@ -162,7 +186,9 @@
       "tg_username": "laylo_i",
       "age": 18,
       "phone": "+998900006666",
-      "lessons": ["l3"],
+      "lessons": [
+        "l3"
+      ],
       "email": "laylo@example.com",
       "createdAt": "2025-08-02T15:00:00.000Z",
       "updatedAt": "2025-08-05T16:00:00.000Z"
@@ -175,7 +201,10 @@
       "tg_username": "bekzod_a",
       "age": 22,
       "phone": "+998900008888",
-      "lessons": ["l4", "l5"],
+      "lessons": [
+        "l4",
+        "l5"
+      ],
       "email": "bekzod@example.com",
       "createdAt": "2025-08-01T14:00:00.000Z",
       "updatedAt": "2025-08-03T14:00:00.000Z"
@@ -188,7 +217,10 @@
       "tg_username": "zuhra_t",
       "age": 19,
       "phone": "+998900009999",
-      "lessons": ["l6", "l7"],
+      "lessons": [
+        "l6",
+        "l7"
+      ],
       "email": "zuhra@example.com",
       "createdAt": "2025-08-04T19:00:00.000Z",
       "updatedAt": "2025-08-05T19:00:00.000Z"
@@ -201,7 +233,10 @@
       "tg_username": "dilnoza_s",
       "age": 21,
       "phone": "+998900010101",
-      "lessons": ["l8", "l9"],
+      "lessons": [
+        "l8",
+        "l9"
+      ],
       "email": "dilnoza@example.com",
       "createdAt": "2025-08-01T14:00:00.000Z",
       "updatedAt": "2025-08-12T06:57:34.676Z"
@@ -214,7 +249,10 @@
       "tg_username": "gulnora_y",
       "age": 23,
       "phone": "+998900011111",
-      "lessons": ["l10", "l11"],
+      "lessons": [
+        "l10",
+        "l11"
+      ],
       "email": "gulnora@example.com",
       "createdAt": "2025-08-01T14:00:00.000Z",
       "updatedAt": "2025-08-03T14:00:00.000Z"
@@ -227,7 +265,9 @@
       "tg_username": "nargiza_m",
       "age": 20,
       "phone": "+998900012222",
-      "lessons": ["l12"],
+      "lessons": [
+        "l12"
+      ],
       "email": "nargiz@example.com",
       "createdAt": "2025-08-01T14:00:00.000Z",
       "updatedAt": "2025-08-03T14:00:00.000Z"
@@ -254,7 +294,12 @@
         "experience": "5 Years",
         "bio": "Experienced English teacher with expertise in conversation and grammar.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l3", "l5", "l14"],
+        "lessons": [
+          "l1",
+          "l3",
+          "l5",
+          "l14"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T10:00:00.000Z",
         "updatedAt": "2025-08-12T10:14:59.935Z"
@@ -268,7 +313,10 @@
         "tg_username": "ali_k55",
         "age": 20,
         "phone": "+998900005555",
-        "lessons": ["l1", "l2"],
+        "lessons": [
+          "l1",
+          "l2"
+        ],
         "email": "ali@example.com",
         "createdAt": "2025-08-01T14:00:00.000Z",
         "updatedAt": "2025-08-12T12:04:52.498Z"
@@ -303,7 +351,11 @@
         "experience": "3 Years",
         "bio": "Passionate about helping students succeed in English communication.",
         "portfolioVideoLink": null,
-        "lessons": ["l2", "l4", "l13"],
+        "lessons": [
+          "l2",
+          "l4",
+          "l13"
+        ],
         "isActive": true,
         "createdAt": "2025-08-02T11:00:00.000Z",
         "updatedAt": "2025-08-11T12:06:32.529Z"
@@ -317,7 +369,10 @@
         "tg_username": "ali_k55",
         "age": 20,
         "phone": "+998900005555",
-        "lessons": ["l1", "l2"],
+        "lessons": [
+          "l1",
+          "l2"
+        ],
         "email": "ali@example.com",
         "createdAt": "2025-08-01T14:00:00.000Z",
         "updatedAt": "2025-08-12T12:04:52.498Z"
@@ -352,7 +407,12 @@
         "experience": "5 Years",
         "bio": "Experienced English teacher with expertise in conversation and grammar.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l3", "l5", "l14"],
+        "lessons": [
+          "l1",
+          "l3",
+          "l5",
+          "l14"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T10:00:00.000Z",
         "updatedAt": "2025-08-12T10:14:59.935Z"
@@ -366,7 +426,9 @@
         "tg_username": "laylo_i",
         "age": 18,
         "phone": "+998900006666",
-        "lessons": ["l3"],
+        "lessons": [
+          "l3"
+        ],
         "email": "laylo@example.com",
         "createdAt": "2025-08-02T15:00:00.000Z",
         "updatedAt": "2025-08-05T16:00:00.000Z"
@@ -401,7 +463,11 @@
         "experience": "3 Years",
         "bio": "Passionate about helping students succeed in English communication.",
         "portfolioVideoLink": null,
-        "lessons": ["l2", "l4", "l13"],
+        "lessons": [
+          "l2",
+          "l4",
+          "l13"
+        ],
         "isActive": true,
         "createdAt": "2025-08-02T11:00:00.000Z",
         "updatedAt": "2025-08-11T12:06:32.529Z"
@@ -415,7 +481,9 @@
         "tg_username": "javlon_s",
         "age": 22,
         "phone": "+998900007777",
-        "lessons": ["l4"],
+        "lessons": [
+          "l4"
+        ],
         "email": "javlon@example.com",
         "createdAt": "2025-08-04T13:00:00.000Z",
         "updatedAt": "2025-08-06T15:00:00.000Z"
@@ -450,7 +518,12 @@
         "experience": "5 Years",
         "bio": "Experienced English teacher with expertise in conversation and grammar.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l3", "l5", "l14"],
+        "lessons": [
+          "l1",
+          "l3",
+          "l5",
+          "l14"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T10:00:00.000Z",
         "updatedAt": "2025-08-12T10:14:59.935Z"
@@ -464,7 +537,9 @@
         "tg_username": "dilnoza_r",
         "age": 19,
         "phone": "+998900008888",
-        "lessons": ["l5"],
+        "lessons": [
+          "l5"
+        ],
         "email": "dilnoza@example.com",
         "createdAt": "2025-08-05T11:00:00.000Z",
         "updatedAt": "2025-08-07T14:00:00.000Z"
@@ -499,7 +574,10 @@
         "experience": "7 Years",
         "bio": "Specialized in business English and advanced grammar.",
         "portfolioVideoLink": null,
-        "lessons": ["l6", "l7"],
+        "lessons": [
+          "l6",
+          "l7"
+        ],
         "isActive": true,
         "createdAt": "2025-08-03T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:00:00.000Z"
@@ -513,7 +591,9 @@
         "tg_username": "bekzod_t",
         "age": 25,
         "phone": "+998900001111",
-        "lessons": ["l6"],
+        "lessons": [
+          "l6"
+        ],
         "email": "bekzod@example.com",
         "createdAt": "2025-08-06T10:00:00.000Z",
         "updatedAt": "2025-08-08T12:00:00.000Z"
@@ -548,7 +628,10 @@
         "experience": "7 Years",
         "bio": "Specialized in business English and advanced grammar.",
         "portfolioVideoLink": null,
-        "lessons": ["l6", "l7"],
+        "lessons": [
+          "l6",
+          "l7"
+        ],
         "isActive": true,
         "createdAt": "2025-08-03T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:00:00.000Z"
@@ -562,7 +645,9 @@
         "tg_username": "asad_y",
         "age": 21,
         "phone": "+998900002222",
-        "lessons": ["l7"],
+        "lessons": [
+          "l7"
+        ],
         "email": "asad@example.com",
         "createdAt": "2025-08-07T13:00:00.000Z",
         "updatedAt": "2025-08-08T14:00:00.000Z"
@@ -597,7 +682,10 @@
         "experience": "6 Years",
         "bio": "Native speaker focusing on pronunciation and fluency.",
         "portfolioVideoLink": null,
-        "lessons": ["l8", "l9"],
+        "lessons": [
+          "l8",
+          "l9"
+        ],
         "isActive": true,
         "createdAt": "2025-08-04T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:30:00.000Z"
@@ -611,7 +699,9 @@
         "tg_username": "nigora_a",
         "age": 23,
         "phone": "+998900004444",
-        "lessons": ["l8"],
+        "lessons": [
+          "l8"
+        ],
         "email": "nigora@example.com",
         "createdAt": "2025-08-08T13:00:00.000Z",
         "updatedAt": "2025-08-09T15:00:00.000Z"
@@ -646,7 +736,10 @@
         "experience": "6 Years",
         "bio": "Native speaker focusing on pronunciation and fluency.",
         "portfolioVideoLink": null,
-        "lessons": ["l8", "l9"],
+        "lessons": [
+          "l8",
+          "l9"
+        ],
         "isActive": true,
         "createdAt": "2025-08-04T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:30:00.000Z"
@@ -660,7 +753,9 @@
         "tg_username": "shahzod_r",
         "age": 24,
         "phone": "+998900005555",
-        "lessons": ["l9"],
+        "lessons": [
+          "l9"
+        ],
         "email": "shahzod@example.com",
         "createdAt": "2025-08-09T13:00:00.000Z",
         "updatedAt": "2025-08-10T15:00:00.000Z"
@@ -695,7 +790,11 @@
         "experience": "4 Years",
         "bio": "Helping students improve everyday English and vocabulary.",
         "portfolioVideoLink": null,
-        "lessons": ["l10", "l11", "l12"],
+        "lessons": [
+          "l10",
+          "l11",
+          "l12"
+        ],
         "isActive": true,
         "createdAt": "2025-08-05T09:00:00.000Z",
         "updatedAt": "2025-08-12T12:00:00.000Z"
@@ -709,7 +808,9 @@
         "tg_username": "malika_u",
         "age": 20,
         "phone": "+998900006666",
-        "lessons": ["l10"],
+        "lessons": [
+          "l10"
+        ],
         "email": "malika@example.com",
         "createdAt": "2025-08-10T13:00:00.000Z",
         "updatedAt": "2025-08-11T15:00:00.000Z"
@@ -744,7 +845,11 @@
         "experience": "4 Years",
         "bio": "Helping students improve everyday English and vocabulary.",
         "portfolioVideoLink": null,
-        "lessons": ["l10", "l11", "l12"],
+        "lessons": [
+          "l10",
+          "l11",
+          "l12"
+        ],
         "isActive": true,
         "createdAt": "2025-08-05T09:00:00.000Z",
         "updatedAt": "2025-08-12T12:00:00.000Z"
@@ -758,14 +863,16 @@
         "tg_username": "sanjar_x",
         "age": 26,
         "phone": "+998900007777",
-        "lessons": ["l11"],
+        "lessons": [
+          "l11"
+        ],
         "email": "sanjar@example.com",
         "createdAt": "2025-08-11T13:00:00.000Z",
         "updatedAt": "2025-08-12T15:00:00.000Z"
       },
       "startTime": "2025-08-20T08:00:00.000Z",
       "endTime": "2025-08-20T09:00:00.000Z",
-      "status": "booked",
+      "status": "scheduled",
       "googleEventId": "evt-111",
       "meetingUrl": "https://zoom.us/j/123456",
       "price": 17,
@@ -793,7 +900,11 @@
         "experience": "4 Years",
         "bio": "Helping students improve everyday English and vocabulary.",
         "portfolioVideoLink": null,
-        "lessons": ["l10", "l11", "l12"],
+        "lessons": [
+          "l10",
+          "l11",
+          "l12"
+        ],
         "isActive": true,
         "createdAt": "2025-08-05T09:00:00.000Z",
         "updatedAt": "2025-08-12T12:00:00.000Z"
@@ -807,14 +918,16 @@
         "tg_username": "laylo_k",
         "age": 18,
         "phone": "+998900008888",
-        "lessons": ["l12"],
+        "lessons": [
+          "l12"
+        ],
         "email": "laylo@example.com",
         "createdAt": "2025-08-12T13:00:00.000Z",
         "updatedAt": "2025-08-12T15:00:00.000Z"
       },
       "startTime": "2025-08-21T08:00:00.000Z",
       "endTime": "2025-08-21T09:00:00.000Z",
-      "status": "available",
+      "status": "scheduled",
       "googleEventId": "evt-112",
       "meetingUrl": "https://zoom.us/j/234567",
       "price": 17,
@@ -845,7 +958,11 @@
         "experience": "5 Years",
         "bio": "Expert in conversational English and IELTS preparation.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l2", "l3"],
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:00:00.000Z"
@@ -859,7 +976,9 @@
         "tg_username": "ali_k",
         "age": 20,
         "phone": "+998900009999",
-        "lessons": ["l1"],
+        "lessons": [
+          "l1"
+        ],
         "email": "ali@example.com",
         "createdAt": "2025-08-01T13:00:00.000Z",
         "updatedAt": "2025-08-02T14:00:00.000Z"
@@ -895,7 +1014,11 @@
         "experience": "5 Years",
         "bio": "Expert in conversational English and IELTS preparation.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l2", "l3"],
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:00:00.000Z"
@@ -909,7 +1032,9 @@
         "tg_username": "madina_i",
         "age": 19,
         "phone": "+998900001212",
-        "lessons": ["l2"],
+        "lessons": [
+          "l2"
+        ],
         "email": "madina@example.com",
         "createdAt": "2025-08-02T13:00:00.000Z",
         "updatedAt": "2025-08-03T14:00:00.000Z"
@@ -945,7 +1070,11 @@
         "experience": "5 Years",
         "bio": "Expert in conversational English and IELTS preparation.",
         "portfolioVideoLink": null,
-        "lessons": ["l1", "l2", "l3"],
+        "lessons": [
+          "l1",
+          "l2",
+          "l3"
+        ],
         "isActive": true,
         "createdAt": "2025-08-01T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:00:00.000Z"
@@ -959,7 +1088,9 @@
         "tg_username": "bekzod_t",
         "age": 22,
         "phone": "+998900002323",
-        "lessons": ["l3"],
+        "lessons": [
+          "l3"
+        ],
         "email": "bekzod@example.com",
         "createdAt": "2025-08-03T13:00:00.000Z",
         "updatedAt": "2025-08-04T14:00:00.000Z"
@@ -995,7 +1126,11 @@
         "experience": "3 Years",
         "bio": "Specialized in grammar and business English.",
         "portfolioVideoLink": null,
-        "lessons": ["l4", "l5", "l6"],
+        "lessons": [
+          "l4",
+          "l5",
+          "l6"
+        ],
         "isActive": true,
         "createdAt": "2025-08-02T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:30:00.000Z"
@@ -1009,7 +1144,9 @@
         "tg_username": "gulbahor_s",
         "age": 25,
         "phone": "+998900004444",
-        "lessons": ["l4"],
+        "lessons": [
+          "l4"
+        ],
         "email": "gulbahor@example.com",
         "createdAt": "2025-08-04T13:00:00.000Z",
         "updatedAt": "2025-08-05T14:00:00.000Z"
@@ -1045,7 +1182,11 @@
         "experience": "3 Years",
         "bio": "Specialized in grammar and business English.",
         "portfolioVideoLink": null,
-        "lessons": ["l4", "l5", "l6"],
+        "lessons": [
+          "l4",
+          "l5",
+          "l6"
+        ],
         "isActive": true,
         "createdAt": "2025-08-02T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:30:00.000Z"
@@ -1059,7 +1200,9 @@
         "tg_username": "sherzod_a",
         "age": 23,
         "phone": "+998900005555",
-        "lessons": ["l5"],
+        "lessons": [
+          "l5"
+        ],
         "email": "sherzod@example.com",
         "createdAt": "2025-08-05T13:00:00.000Z",
         "updatedAt": "2025-08-06T14:00:00.000Z"
@@ -1095,7 +1238,11 @@
         "experience": "3 Years",
         "bio": "Specialized in grammar and business English.",
         "portfolioVideoLink": null,
-        "lessons": ["l4", "l5", "l6"],
+        "lessons": [
+          "l4",
+          "l5",
+          "l6"
+        ],
         "isActive": true,
         "createdAt": "2025-08-02T09:00:00.000Z",
         "updatedAt": "2025-08-12T10:30:00.000Z"
@@ -1109,7 +1256,9 @@
         "tg_username": "sevara_y",
         "age": 21,
         "phone": "+998900006666",
-        "lessons": ["l6"],
+        "lessons": [
+          "l6"
+        ],
         "email": "sevara@example.com",
         "createdAt": "2025-08-06T13:00:00.000Z",
         "updatedAt": "2025-08-07T14:00:00.000Z"
@@ -1145,7 +1294,11 @@
         "experience": "7 Years",
         "bio": "Pronunciation and accent reduction coach.",
         "portfolioVideoLink": null,
-        "lessons": ["l7", "l8", "l9"],
+        "lessons": [
+          "l7",
+          "l8",
+          "l9"
+        ],
         "isActive": true,
         "createdAt": "2025-08-03T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:00:00.000Z"
@@ -1159,7 +1312,9 @@
         "tg_username": "aziz_q",
         "age": 26,
         "phone": "+998900007777",
-        "lessons": ["l7"],
+        "lessons": [
+          "l7"
+        ],
         "email": "aziz@example.com",
         "createdAt": "2025-08-07T13:00:00.000Z",
         "updatedAt": "2025-08-08T14:00:00.000Z"
@@ -1195,7 +1350,11 @@
         "experience": "7 Years",
         "bio": "Pronunciation and accent reduction coach.",
         "portfolioVideoLink": null,
-        "lessons": ["l7", "l8", "l9"],
+        "lessons": [
+          "l7",
+          "l8",
+          "l9"
+        ],
         "isActive": true,
         "createdAt": "2025-08-03T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:00:00.000Z"
@@ -1209,7 +1368,9 @@
         "tg_username": "nilufar_r",
         "age": 24,
         "phone": "+998900008888",
-        "lessons": ["l8"],
+        "lessons": [
+          "l8"
+        ],
         "email": "nilufar@example.com",
         "createdAt": "2025-08-08T13:00:00.000Z",
         "updatedAt": "2025-08-09T14:00:00.000Z"
@@ -1245,7 +1406,11 @@
         "experience": "7 Years",
         "bio": "Pronunciation and accent reduction coach.",
         "portfolioVideoLink": null,
-        "lessons": ["l7", "l8", "l9"],
+        "lessons": [
+          "l7",
+          "l8",
+          "l9"
+        ],
         "isActive": true,
         "createdAt": "2025-08-03T09:00:00.000Z",
         "updatedAt": "2025-08-12T11:00:00.000Z"
@@ -1259,7 +1424,9 @@
         "tg_username": "sardor_h",
         "age": 27,
         "phone": "+998900009999",
-        "lessons": ["l9"],
+        "lessons": [
+          "l9"
+        ],
         "email": "sardor@example.com",
         "createdAt": "2025-08-09T13:00:00.000Z",
         "updatedAt": "2025-08-10T14:00:00.000Z"
