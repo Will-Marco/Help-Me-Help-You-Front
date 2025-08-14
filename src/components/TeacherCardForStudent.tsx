@@ -11,7 +11,6 @@ interface Props {
   teacher: Teacher;
   lessons: LessonType[];
   handleOnClick?: () => void;
-  badgeOnClick?: () => void;
   oneTeacher?: boolean;
 }
 
@@ -19,7 +18,6 @@ const TeacherCardForStudent: FC<Props> = ({
   teacher,
   lessons,
   handleOnClick,
-  badgeOnClick,
   oneTeacher = false,
 }) => {
   const teacherLessons = lessons.filter((l) => l.teacherId === teacher.id);
@@ -29,29 +27,81 @@ const TeacherCardForStudent: FC<Props> = ({
 
   const today = startOfToday();
   const [selectedDate, setSelectedDate] = useState<Date>(today);
+  const [selectedLessonId, setSelectedLessonId] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [bookedLessonIds, setBookedLessonIds] = useState<string[]>([]);
 
   // Bugundan boshlab 7 kunlik massiv
-  const days = useMemo(() => {
-    return Array.from({ length: 7 }, (_, i) => addDays(today, i));
-  }, [today]);
+  const days = useMemo(
+    () => Array.from({ length: 7 }, (_, i) => addDays(today, i)),
+    [today]
+  );
 
   // Tanlangan kunga tegishli darslar
   const filteredLessons = teacherLessons.filter((l) =>
     isSameDay(new Date(l.startTime), selectedDate)
   );
 
+  // Booking (oneTeacher=true)
+  const handleBooking = async () => {
+    if (!selectedLessonId) {
+      alert("Please select a lesson time before booking.");
+      return;
+    }
+    try {
+      setLoading(true);
+      const response = await fetch("http://localhost:3000/lessons", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          studentId: "s1", // 🔹 static
+          tg_id: "tg-1001", // 🔹 static
+          teacherId: teacher.id,
+          lessonId: selectedLessonId,
+          date: selectedDate,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Failed to book lesson");
+
+      alert("Lesson booked successfully!");
+      setBookedLessonIds((prev) => [...prev, selectedLessonId]); // ✅ booked listga qo‘shish
+      setSelectedLessonId(null);
+    } catch (error) {
+      console.error(error);
+      alert("Error booking lesson");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const lessonBadges =
     filteredLessons.length > 0 ? (
-      filteredLessons.map((lesson) => (
-        <Badge
-          onClick={badgeOnClick}
-          key={lesson.id}
-          variant="outline"
-          className="text-xs lg:text-sm flex justify-between w-full cursor-pointer"
-        >
-          {formatTime(lesson.startTime)} - {formatTime(lesson.endTime)}
-        </Badge>
-      ))
+      filteredLessons.map((lesson) => {
+        const isBooked = bookedLessonIds.includes(lesson.id);
+        const isSelected = selectedLessonId === lesson.id;
+
+        return (
+          <Badge
+            key={lesson.id}
+            variant={
+              isBooked
+                ? "secondary" // ✅ booked bo‘lsa boshqa rang
+                : isSelected
+                ? "default"
+                : "outline"
+            }
+            className={`text-xs lg:text-sm flex justify-between w-full cursor-pointer ${
+              isBooked ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            onClick={() => {
+              if (!isBooked) setSelectedLessonId(lesson.id);
+            }}
+          >
+            {formatTime(lesson.startTime)} - {formatTime(lesson.endTime)}
+          </Badge>
+        );
+      })
     ) : (
       <Badge variant="outline" className="text-gray-500 text-xs lg:text-sm w-full">
         no class time
@@ -59,7 +109,7 @@ const TeacherCardForStudent: FC<Props> = ({
     );
 
   return (
-    <div className={`border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow `}>
+    <div className="border rounded-lg shadow-sm bg-white hover:shadow-md transition-shadow">
       {/* Teacher Image */}
       <img
         className="w-full h-[200px] lg:h-[300px] object-cover rounded-t-lg"
@@ -71,10 +121,7 @@ const TeacherCardForStudent: FC<Props> = ({
       <div className="p-4 space-y-3 lg:space-y-4">
         <div className="flex items-center justify-between">
           <span className="font-semibold text-lg lg:text-xl">{teacher.name}</span>
-          <Badge
-            variant="secondary"
-            className="bg-gray-200 text-gray-800 text-xs lg:text-sm"
-          >
+          <Badge variant="secondary" className="bg-gray-200 text-gray-800 text-xs lg:text-sm">
             {teacher.level}
           </Badge>
         </div>
@@ -154,14 +201,17 @@ const TeacherCardForStudent: FC<Props> = ({
               const isDisabled = !isAfter(day, today) && !isSameDay(day, today);
               return (
                 <Button
-                className="cursor-pointer"
+                  className="cursor-pointer"
                   key={day.toISOString()}
                   variant={isSameDay(day, selectedDate) ? "default" : "outline"}
                   size="sm"
                   disabled={isDisabled}
-                  onClick={() => setSelectedDate(day)}
+                  onClick={() => {
+                    setSelectedDate(day);
+                    setSelectedLessonId(null);
+                  }}
                 >
-                  {format(day, "EEE dd")} {/* Mon 11 */}
+                  {format(day, "EEE dd")}
                 </Button>
               );
             })}
@@ -174,13 +224,23 @@ const TeacherCardForStudent: FC<Props> = ({
 
       {/* Booking button */}
       <div className="p-4">
-        <Button
-          onClick={handleOnClick}
-          className="w-full text-sm lg:text-base py-2 lg:py-3"
-          variant="default"
-        >
-          Booking
-        </Button>
+        {oneTeacher ? (
+          <Button
+            onClick={handleBooking}
+            disabled={!selectedLessonId || loading}
+            className="w-full text-sm lg:text-base py-2 lg:py-3 cursor-pointer"
+          >
+            {loading ? "Booking..." : "Confirm Booking"}
+          </Button>
+        ) : (
+          <Button
+            onClick={handleOnClick}
+            className="w-full text-sm lg:text-base py-2 lg:py-3 cursor-pointer"
+            variant="default"
+          >
+            Booking
+          </Button>
+        )}
       </div>
     </div>
   );

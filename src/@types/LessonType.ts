@@ -3,4 +3,8 @@ export interface LessonType {
   teacherId: string;
   startTime: string;
   endTime: string;
+  price?: number;
+  status?: "available" | "booked" | "canceled";
+  isPaid?: boolean; // ✅ qo'shildi
+  studentId?: string | null;
 }
