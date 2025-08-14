@@ -11,6 +11,7 @@ interface Props {
   teacher: Teacher;
   lessons: LessonType[];
   handleOnClick?: () => void;
+  badgeOnClick?: () => void;
   oneTeacher?: boolean;
 }
 
@@ -18,6 +19,7 @@ const TeacherCardForStudent: FC<Props> = ({
   teacher,
   lessons,
   handleOnClick,
+  badgeOnClick,
   oneTeacher = false,
 }) => {
   const teacherLessons = lessons.filter((l) => l.teacherId === teacher.id);
@@ -42,9 +44,10 @@ const TeacherCardForStudent: FC<Props> = ({
     filteredLessons.length > 0 ? (
       filteredLessons.map((lesson) => (
         <Badge
+          onClick={badgeOnClick}
           key={lesson.id}
           variant="outline"
-          className="text-xs lg:text-sm flex justify-between w-full"
+          className="text-xs lg:text-sm flex justify-between w-full cursor-pointer"
         >
           {formatTime(lesson.startTime)} - {formatTime(lesson.endTime)}
         </Badge>

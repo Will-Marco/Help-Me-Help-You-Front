@@ -26,8 +26,12 @@ const StudentTeacherModule = () => {
       .catch(err => console.error(err));
   }, [teacherId]);
 
+  function badgeOnClick(teacherId: string, studentId: string) {
+
+  }
+
   return (
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="mx-auto px-4 sm:px-6 lg:px-8">
     <button
       onClick={() => navigate(StudentPaths.studentHome)}
       className="flex items-center gap-1 mb-4 px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 transition-colors"
@@ -40,6 +44,7 @@ const StudentTeacherModule = () => {
           teacher={teacher}
           lessons={lessons}
           oneTeacher={true}
+          badgeOnClick={() => badgeOnClick(teacherId, "as")}
         />
       )}
     </div>
