@@ -148,7 +148,6 @@ export default function RatingPage() {
             }
             className="p-4 pr-20 border rounded-xl flex justify-between items-center bg-white shadow-sm hover:shadow-md transition cursor-pointer relative"
           >
-            {/* Rank badge */}
             <div className="absolute -left-3 top-1 -translate-y-1/2 bg-yellow-600 text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full shadow-md">
               {index + 1}
             </div>
@@ -201,14 +200,12 @@ export default function RatingPage() {
         ))}
       </div>
 
-      {/* Teacher DetailsDialog */}
       <DetailsDialog
         item={selectedTeacher}
         fields={teacherFields}
         onClose={() => setSelectedTeacher(null)}
       />
 
-      {/* Student DetailsDialog */}
       <DetailsDialog
         item={selectedStudent}
         fields={studentFields}

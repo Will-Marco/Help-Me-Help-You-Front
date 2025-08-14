@@ -1,17 +1,22 @@
 export interface Teacher {
-    id: string;
-    name: string;
-    email: string;
-    image: string;
-    hourPrice: number;
-    phone: string;
-    level: string;
-    rating: number;
-    lessons: string[];
-    experience: string;
-    bio: string;
-    isActive: boolean;
-    portfolioVideoLink?: string;
-    createdAt: string;
-    updatedAt: string;
-  }
+  id: string;
+  name: string;
+  googleId: string | null;
+  email: string;
+  password: string | null;
+  googleRefreshToken: string | null;
+  googleAccessToken: string | null;
+  image: string;
+  hourPrice: number;
+  role: "TEACHER";
+  phone: string;
+  level: string;
+  rating: number;
+  experience: string;
+  bio: string;
+  portfolioVideoLink: string | null;
+  lessons: string[];
+  isActive: boolean;
+  createdAt: string;
+  updatedAt: string;
+}

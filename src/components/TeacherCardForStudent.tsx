@@ -152,7 +152,7 @@ const TeacherCardForStudent: FC<Props> = ({
             <Badge variant="destructive" className="text-xs lg:text-sm">
               <a
                 className="cursor-pointer"
-                href={teacher.portfolioVideoLink}
+                href={teacher.portfolioVideoLink || ""}
                 target="_blank"
               >
                 link-portfolio

@@ -6,12 +6,15 @@ import PageLoading from "@/components/PageLoading";
 import { UpdateDialog } from "@/components/UpdateDialog";
 import { ConfirmDeleteDialog } from "@/components/ConfirmDeleteDialog";
 import { DetailsDialog } from "@/components/DetailsDialog";
-import { StudentCard } from "@/components/StudentCard";  // StudentCard import qildik
+import { StudentCard } from "@/components/StudentCard"; 
 import type { Student } from "@/@types/Student";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
+import { AddStudentDialog } from "@/components/AddStudent";
 
 const API = "http://localhost:3000";
 
-type DialogType = "update" | "delete" | "details" | null;
+type DialogType = "add"|"update" | "delete" | "details" | null;
 
 const studentFields = [
   { label: "First Name", key: "firstname" },
@@ -30,7 +33,6 @@ const Students: React.FC = () => {
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const [dialogType, setDialogType] = useState<DialogType>(null);
 
-  // Malumotlarni olish
   const fetchStudents = async () => {
     setLoading(true);
     try {
@@ -39,7 +41,7 @@ const Students: React.FC = () => {
       const data: Student[] = await res.json();
       setStudents(data);
     } catch (error) {
-      toast.error("Studentlarni olishda xatolik yuz berdi");
+      toast.error("Error fetching students");
     } finally {
       setLoading(false);
     }
@@ -49,27 +51,24 @@ const Students: React.FC = () => {
     fetchStudents();
   }, []);
 
-  // Search filter
   const filteredStudents = students.filter((s) =>
     [s.firstname, s.lastname, s.email, s.phone]
       .some((field) => field.toLowerCase().includes(search.toLowerCase()))
   );
 
-  // Delete handler
   const handleDelete = async (student: Student) => {
     try {
       const res = await fetch(`${API}/students/${student.id}`, { method: "DELETE" });
       if (!res.ok) throw new Error("Delete failed");
       setStudents(students.filter((s) => s.id !== student.id));
-      toast.success("Student o‘chirildi");
+      toast.success("Delete successful");
     } catch {
-      toast.error("O‘chirishda xatolik");
+      toast.error("Error deleting student");
     }
     setDialogType(null);
     setSelectedStudent(null);
   };
 
-  // Update handler
   const handleUpdate = async (updatedStudent: Student) => {
     try {
       const payload = { ...updatedStudent, updatedAt: new Date().toISOString() };
@@ -80,9 +79,9 @@ const Students: React.FC = () => {
       });
       if (!res.ok) throw new Error("Update failed");
       setStudents(students.map((s) => (s.id === updatedStudent.id ? payload : s)));
-      toast.success("Student yangilandi");
+      toast.success("Student updated successfully");
     } catch {
-      toast.error("Yangilashda xatolik");
+      toast.error("Error updating student");
     }
     setDialogType(null);
     setSelectedStudent(null);
@@ -90,17 +89,64 @@ const Students: React.FC = () => {
 
   if (loading) return <PageLoading />;
 
+  const handleAdd = async (
+    newStundetData: Omit<
+      Student,
+      | "id"
+      | "createdAt"
+      | "updatedAt"
+      | "lessons"
+    >
+  ) => {
+    try {
+      const now = new Date().toISOString();
+      const payload = {
+        ...newStundetData,
+        id: `t${Date.now()}`,
+        lessons: [],
+        createdAt: now,
+        updatedAt: now,
+      };
+
+      const res = await fetch(`${API}/students`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        const createdStudent: Student = await res.json();
+        setStudents([...students, createdStudent]);
+        toast.success("Teacher added successfully");
+      } else {
+        toast.error("Error adding teacher");
+      }
+    } catch {
+      toast.error("Error adding teacher");
+    }
+    setDialogType(null);
+  };
+
   return (
     <div className="p-6">
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <h1 className="text-3xl font-semibold text-gray-900">Students</h1>
-        <Input
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search by first name, last name, email or phone"
-          className="max-w-sm w-full bg-white border border-gray-200"
-          type="search"
-        />
+        <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto sm:flex-1">
+          <Input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search by first name, last name, email or phone"
+            className="flex-1 bg-white border border-gray-200"
+            type="search"
+          />
+          <Button
+            onClick={() => setDialogType("add")}
+            className="flex items-center gap-2"
+          >
+            <Plus className="w-4 h-4" />
+            Add Student
+          </Button>
+        </div>
       </div>
 
       <div className="space-y-4">
@@ -130,6 +176,12 @@ const Students: React.FC = () => {
           ))
         )}
       </div>
+
+      <AddStudentDialog
+        open={dialogType === "add"}
+        onClose={() => setDialogType(null)}
+        onAdd={handleAdd}
+      />
 
       <UpdateDialog
         item={dialogType === "update" ? selectedStudent : null}
